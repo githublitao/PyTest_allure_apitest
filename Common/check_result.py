@@ -3,7 +3,7 @@ import re
 
 import allure
 
-from Common.check_json import check_json
+from Common import check_json
 
 failureException = AssertionError
 
@@ -29,7 +29,7 @@ def check(case_data, code, data):
         if int(code) == case_data["expected_code"]:
             if not data:
                 data = "{}"
-            check_json(case_data["expected_request"], data)
+            check_json.check_json(case_data["expected_request"], data)
         else:
             raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
 
@@ -73,5 +73,8 @@ def check(case_data, code, data):
         else:
             raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
 
+    # 数据库校验
+    elif case_data["check_type"] == "datebase_check":
+        pass
     else:
         raise failureException("无该校验方式%s" % case_data["check_type"])
