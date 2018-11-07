@@ -87,9 +87,7 @@ test_case:
             check_type: json # 校验json格式
             datebase:
             expected_code: 200
-            expected_request:
-                name: 李三
-                age: 123
+            expected_request: {"code":"999997","msg":"存在相同名称","data":null}
       relevance:
 
     - test_name: 添加项目3
@@ -111,9 +109,7 @@ test_case:
             check_type: entirely_check # 完全校验
             datebase:
             expected_code: 200
-            expected_request:
-                name: 李三
-                age: 123
+            expected_request: {"code":"999997","msg":"存在相同名称","data":null}
       relevance:
 
     - test_name: 添加项目4
@@ -135,7 +131,7 @@ test_case:
             check_type: Regular_check # 正则校验
             datebase:
             expected_code: 200
-            expected_request: key
+            expected_request: 存在相同名称
       relevance:
 
     - test_name: 添加项目5
