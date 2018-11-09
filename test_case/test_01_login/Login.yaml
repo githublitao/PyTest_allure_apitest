@@ -15,7 +15,7 @@ test_case:
       parameter_type: form-data
       headers: {}
       timeout: 8
-      parameter: .\\test_case\\test_01_login\\login.json
+      parameter: ./test_case/test_01_login/login.json
       file: false
       check:
             check_type: no_check # 不校验
