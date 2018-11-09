@@ -2,8 +2,6 @@
 testinfo:
       id: test_samllNumber
       title: 小号绑定/解绑
-      host: ${mock}$
-      address:
 
 # 前置条件，case之前需关联的接口
 premise:

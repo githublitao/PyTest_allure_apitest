@@ -1,6 +1,18 @@
+# -*- coding: utf-8 -*-
+
+# @Time    : 2018/11/9 15:06
+
+# @Author  : litao
+
+# @Project : project
+
+# @FileName: GetRelevance.py
+
+# @Software: PyCharm
+
 import allure
 
-from Common import ParamManage, confighttp
+from Common import confighttp, HostManage, ReadParam
 
 failureException = AssertionError
 
@@ -15,16 +27,19 @@ def send_request(data, host, address, relevance):
     :return:
     """
     if isinstance(data["headers"], dict):
-        header = ParamManage.read_param(data["test_name"], data["headers"], relevance)  # 处理请求头
+        header = ReadParam.read_param(data["test_name"], data["headers"], relevance)  # 处理请求头
     else:
         raise failureException("请求头格式有误  %s" % data["headers"])
-    parameter = ParamManage.read_param(data["test_name"], data["parameter"], relevance)  # 处理请求参数
+    parameter = ReadParam.read_param(data["test_name"], data["parameter"], relevance)  # 处理请求参数
     try:
+        # 如果用例中写了host和address，则使用用例中的host和address，若没有则使用全局的
         host = data["host"]
         address = data["address"]
     except KeyError:
         pass
-    host = ParamManage.host_manage(host)
+    host = HostManage.host_manage(host)  # host处理，读取配置文件中的host
+    if not host:
+        raise failureException("接口请求地址为空  %s" % data["headers"])
     if data["request_type"] == 'post':
         if data["file"]:
             with allure.step("POST上传文件"):

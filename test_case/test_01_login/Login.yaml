@@ -1,9 +1,9 @@
+# 用例基本信息
 testinfo:
-      id: test_login
-      title: 登陆
-      BeCall: true
-      host: ${test_platform}$
-      address: /api/user/login
+      id: test_login  # 用例ID， 用于识别
+      title: 登陆  # 用例标题，在报告中作为一级目录显示
+      host: ${test_platform}$   # 请求的域名，可写死，也可写成模板关联host配置文件
+      address: /api/user/login # 请求地址
 
 premise:
 
@@ -22,6 +22,7 @@ test_case:
             datebase:
             expected_code:
             expected_request:
+      relevance:
 
     - test_name: 登陆2
       info: 正常登陆2
@@ -35,10 +36,16 @@ test_case:
             password: lt19910301
       file: false
       check:
-            check_type: only_check_status # 校验http状态
+          - check_type: only_check_status # 校验http状态
             datebase:
             expected_code: 200
             expected_request:
+
+          - check_type: json # 校验json格式
+            datebase:
+            expected_code: 200
+            expected_request: ./test_case/test_01_login/expected_Login.json
+      relevance:
 
     - test_name: 登陆3
       info: 正常登陆3
@@ -55,7 +62,8 @@ test_case:
             check_type: json # 校验json格式
             datebase:
             expected_code: 200
-            expected_request: {"code":"999999","msg":"成功","data":{"first_name":"Tom","last_name":"","phone":"123456789","email":"123@qq.com","key":"e1dfbfd759ad46bcdc44df989ade3f1c190cc936","date_joined":"2018-06-28 02:54:00","userphoto":"/file/userphoto.jpg"}}
+            expected_request: ./test_case/test_01_login/expected_Login.json
+      relevance:
 
     - test_name: 登陆4
       info: 正常登陆4
@@ -72,7 +80,8 @@ test_case:
             check_type: entirely_check # 完全校验
             datebase:
             expected_code: 200
-            expected_request: {"code":"999999","msg":"成功","data":{"first_name":"Tom","last_name":"","phone":"123456789","email":"123@qq.com","key":"e1dfbfd759ad46bcdc44df989ade3f1c190cc936","date_joined":"2018-06-28 02:54:00","userphoto":"/file/userphoto.jpg"}}
+            expected_request: ./test_case/test_01_login/expected_Login.json
+      relevance:
 
     - test_name: 登陆5
       info: 正常登陆5
@@ -91,6 +100,7 @@ test_case:
             expected_code: 200
             expected_request:
                   - key
+      relevance:
 
     - test_name: 登陆6
       info: 正常登陆6
@@ -113,3 +123,4 @@ test_case:
                   sql: select * form api_test
             expected_code: 200
             expected_request:
+      relevance:

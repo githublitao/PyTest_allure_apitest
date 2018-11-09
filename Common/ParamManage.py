@@ -1,15 +1,24 @@
-import json
-import re
-from json import JSONDecodeError
+# -*- coding: utf-8 -*-
 
-from config.configHost import ConfHost
+# @Time    : 2018/11/9 15:06
+
+# @Author  : litao
+
+# @Project : project
+
+# @FileName: GetRelevance.py
+
+# @Software: PyCharm
+
+
+import re
+
 
 failureException = AssertionError
 
 
 def manage(param, relevance):
     """
-    author: 李涛
     替换关联数据
     :param param: 请求头或请求参数
     :param relevance: 关联对象
@@ -72,48 +81,6 @@ def get_value(data, value):
                 _relevance = get_value(key, value)
                 break
     return _relevance
-
-
-def host_manage(host):
-    try:
-        relevance_list = re.findall("\${(.*?)}\$", host)  # 查找字符串中所有$key$ 作为关联对象
-        for n in relevance_list:  # 遍历关联key
-            pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
-            host_config = ConfHost()
-            host_relevance = host_config.get_host_conf()
-            host = re.sub(pattern, host_relevance[n], host, count=1)
-    except TypeError:
-        pass
-    return host
-
-
-def read_param(test_name, param, relevance):
-    """
-    判断用例中参数类型
-    :param test_name:
-    :param param:
-    :param relevance:
-    :return:
-    """
-    # 用例中参数为json格式
-    if isinstance(param, dict):
-        param = manage(param, relevance)
-    # 用例中参数非json格式
-    else:
-        try:
-            with open(param, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                for i in data:
-                    if i["test_name"] == test_name:
-                        param = i["parameter"]
-                        break
-                if not param:
-                    raise failureException("未找到用例关联的参数\n文件路径： %s\n索引： %s" % (param, test_name))
-        except FileNotFoundError:
-            raise failureException("用例关联文件不存在\n文件路径： %s" % param)
-        except JSONDecodeError:
-            raise failureException("用例关联的参数文件有误\n文件路径： %s" % param)
-    return param
 
 
 if __name__ == "__main__":

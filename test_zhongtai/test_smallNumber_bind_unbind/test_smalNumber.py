@@ -1,12 +1,18 @@
 # -*- coding:utf-8 -*-
+import os
+
 import allure
 import pytest
 import yaml
 
-from Common import init, check_result, requestSend
+from Common import init
 
 # 读取测试用例
-with open("./test_zhongtai/test_smallNumber_bind_unbind/smallNumber.yaml", 'r', encoding="utf-8") as load_f:
+from Common.TestAndCheck import api_send_check
+
+
+PATH = os.path.split(os.path.realpath(__file__))[0]
+with open(PATH+"/smallNumber.yaml", 'r', encoding="utf-8") as load_f:
     smalNumber_dict = yaml.load(load_f)
 
 relevance = dict()
@@ -35,10 +41,8 @@ class TestAddProject:
             except IndexError:
                 pass
         # 发送测试请求
-        code, data = requestSend.send_request(case_data, smalNumber_dict["testinfo"]["host"],
-                                              smalNumber_dict["testinfo"]["address"], relevance)
-        relevance = init.get_relevance(data, case_data["relevance"], relevance)
-        # # 校验测试结果
-        with allure.step("校验测试结果"):
-            pass
-        check_result.check(case_data["check"], code, data)
+        relevance = api_send_check(case_data, smalNumber_dict, relevance)
+
+
+if __name__ == "__main__":
+    pytest.main()

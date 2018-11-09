@@ -1,4 +1,17 @@
-result = 'success'
+# -*- coding: utf-8 -*-
+
+# @Time    : 2018/11/9 15:06
+
+# @Author  : litao
+
+# @Project : project
+
+# @FileName: GetRelevance.py
+
+# @Software: PyCharm
+
+
+result = 'success'  # 初始化结果结果为success
 
 failureException = AssertionError
 
@@ -12,13 +25,13 @@ def check_json(src_data, dst_data):
     """
     global result
     if isinstance(src_data, dict):
-        """若为dict格式"""
+        # 若为dict格式
         for key in src_data:
             if key not in dst_data:
                 raise failureException("JSON格式校验，关键字 %s 不在返回结果 %s" % (key, dst_data))
             else:
                 this_key = key
-                """递归"""
+                # 递归
                 if isinstance(src_data[this_key], dict) and isinstance(dst_data[this_key], dict):
                     check_json(src_data[this_key], dst_data[this_key])
                 elif isinstance(type(src_data[this_key]), type(dst_data[this_key])):

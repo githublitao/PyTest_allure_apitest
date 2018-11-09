@@ -1,12 +1,24 @@
+# -*- coding: utf-8 -*-
+
+# @Time    : 2018/11/9 15:06
+
+# @Author  : litao
+
+# @Project : project
+
+# @FileName: GetRelevance.py
+
+# @Software: PyCharm
+
 import allure
 
-from Common.ParamManage import get_value
+from Common.GetRelevance import get_relevance
 from Common.requestSend import send_request
 
 
 def ini_request(case_dict, relevance):
     """
-
+    用例前提条件执行，提取关联键
     :param case_dict: 用例对象
     :param relevance:  关联对象
     :return:
@@ -14,34 +26,9 @@ def ini_request(case_dict, relevance):
     if isinstance(case_dict["premise"], list):
         with allure.step("接口关联请求"):
             for i in case_dict["premise"]:
-                code, data = send_request(i, i["host"], i["address"], relevance)
+                code, data = send_request(i, case_dict["testinfo"].get("host"),
+                                          case_dict["testinfo"].get("address"), relevance)
+                # 提取关联键值
                 relevance = get_relevance(data, i["relevance"], relevance)
     return relevance
 
-
-def get_relevance(data, relevance_list, relevance):
-    """
-
-    :param data:  返回结果
-    :param relevance_list:  关联键列表
-    :param relevance: 关联对象
-    :return:
-    """
-    if isinstance(relevance_list, list):
-        for j in relevance_list:
-            relevance_value = get_value(data, j)
-            if relevance_value:
-                if j in relevance:
-                    if isinstance(j, list):
-                        a = relevance[j]
-                        a.append(relevance_value)
-                        relevance[j] = a
-                    else:
-                        a = relevance[j]
-                        b = list()
-                        b.append(a)
-                        b.append(relevance_value)
-                        relevance[j] = a
-                else:
-                    relevance[j] = relevance_value
-    return relevance

@@ -1,15 +1,20 @@
-# -*- coding:utf-8 -*-
-"""
-Created on 2017年5月5日
+# -*- coding: utf-8 -*-
 
-@author: lt
-"""
+# @Time    : 2018/11/9 15:06
+
+# @Author  : litao
+
+# @Project : project
+
+# @FileName: GetRelevance.py
+
+# @Software: PyCharm
+
 import json
 import logging
 
 import requests
 import simplejson
-logger = logging.getLogger(__name__)  # 这里使用 __name__ 动态搜索定义的 logger 配置，这里有一个层次关系的知识点。
 
 
 def post(header, address, request_parameter_type, timeout=8, data=None, files=None):

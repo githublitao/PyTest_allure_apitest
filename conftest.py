@@ -1,3 +1,16 @@
+# -*- coding: utf-8 -*-
+
+# @Time    : 2018/11/9 15:06
+
+# @Author  : litao
+
+# @Project : project
+
+# @FileName: GetRelevance.py
+
+# @Software: PyCharm
+
+
 import pytest
 import allure
 
@@ -12,4 +25,4 @@ def env(request):
     host_config = ConfHost()
     host = host_config.get_host_conf()
     allure.environment(test_platform=host["test_platform"])
-    allure.environment(test_platform=host["mock"])
+    allure.environment(mock=host["mock"])
