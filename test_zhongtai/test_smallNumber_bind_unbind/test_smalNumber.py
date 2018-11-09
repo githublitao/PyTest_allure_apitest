@@ -18,7 +18,6 @@ class TestAddProject:
         global relevance
         relevance = init.ini_request(smalNumber_dict, relevance)
 
-    # @pytest.mark.skipif(sys.version_info < (3, 6))  # 跳过条件
     @pytest.mark.parametrize("case_data", smalNumber_dict["test_case"])
     @allure.story("小号绑定/解绑")
     def test_add_project(self, case_data):

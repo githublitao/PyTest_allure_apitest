@@ -15,18 +15,16 @@ def send_request(data, host, address, relevance):
     :return:
     """
     if isinstance(data["headers"], dict):
-        header = ParamManage.manage(data["headers"], relevance)  # 处理请求头
+        header = ParamManage.read_param(data["test_name"], data["headers"], relevance)  # 处理请求头
     else:
         raise failureException("请求头格式有误  %s" % data["headers"])
-    if isinstance(data["parameter"], dict):
-        parameter = ParamManage.manage(data["parameter"], relevance)  # 处理请求参数
-    else:
-        raise failureException("请求头格式有误  %s" % data["headers"])
+    parameter = ParamManage.read_param(data["test_name"], data["parameter"], relevance)  # 处理请求参数
     try:
         host = data["host"]
         address = data["address"]
     except KeyError:
         pass
+    host = ParamManage.host_manage(host)
     if data["request_type"] == 'post':
         if data["file"]:
             with allure.step("POST上传文件"):

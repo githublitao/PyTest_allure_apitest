@@ -2,7 +2,7 @@
 testinfo:
       id: test_samllNumber
       title: 小号绑定/解绑
-      host: 10.4.100.209
+      host: ${mock}$
       address:
 
 # 前置条件，case之前需关联的接口
@@ -13,7 +13,7 @@ test_case:
     - test_name: 绑定小号
       info: 按订单号绑定
       http_type: http
-      host: 10.4.100.209
+      host: ${mock}$
       address: /mock/13/api/newOrderLogisticsPhone/bindPhone
       request_type: post
       parameter_type: raw
@@ -41,7 +41,7 @@ test_case:
     - test_name: 解绑小号
       info: 解绑订单绑定的小号
       http_type: http
-      host: 10.4.100.209
+      host: ${mock}$
       address: /mock/13/api/newOrderLogisticsPhone/unbind
       request_type: post
       parameter_type: raw
@@ -67,7 +67,7 @@ test_case:
     - test_name: 绑定小号
       info: 按会员id绑定小号
       http_type: http
-      host: 10.4.100.209
+      host: ${mock}$
       address: /mock/13/api/newOrderLogisticsPhone/bindPhoneByMembersId
       request_type: post
       parameter_type: raw
@@ -100,7 +100,7 @@ test_case:
     - test_name: 解绑小号
       info: 解绑会员ID绑定的小号
       http_type: http
-      host: 10.4.100.209
+      host: ${mock}$
       address: /mock/13/api/newOrderLogisticsPhone/unbind
       request_type: post
       parameter_type: raw

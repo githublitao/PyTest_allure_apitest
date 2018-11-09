@@ -2,7 +2,7 @@ testinfo:
       id: test_login
       title: 登陆
       BeCall: true
-      host: 120.79.232.23:8000
+      host: ${test_platform}$
       address: /api/user/login
 
 premise:
@@ -15,9 +15,7 @@ test_case:
       parameter_type: form-data
       headers: {}
       timeout: 8
-      parameter:
-            username: litao
-            password: lt19910301
+      parameter: ./test_case/test_01_login/login.json
       file: false
       check:
             check_type: no_check # 不校验

@@ -2,14 +2,14 @@
 testinfo:
       id: test_addProject
       title: 添加项目
-      host: 120.79.232.23:8000
+      host: ${test_platform}$
       address: /api/project/add_project
 
 # 前置条件，case之前需关联的接口
 premise:
       - test_name: 登陆1
         info: 正常登陆1
-        host: 120.79.232.23:8000
+        host: ${test_platform}$
         address: /api/user/login
         http_type: http
         request_type: post
