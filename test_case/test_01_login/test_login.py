@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+
 import allure
 import pytest
 import yaml
@@ -17,10 +18,11 @@ class TestLogin:
     def setup(self):
         self.relevance = init.ini_request(login_dict, relevance)
 
+    # @pytest.mark.skipif(fa)  # 跳过条件
     @pytest.mark.parametrize("case_data", login_dict["test_case"])
     @allure.story("登录")
-    @allure.issue("http://www.baidu.com")
-    @allure.testcase("http://www.testlink.com")
+    @allure.issue("http://www.baidu.com")  # bug地址
+    @allure.testcase("http://www.testlink.com")  # 用例连接地址
     def test_login(self, case_data):
         """
         正常登陆
@@ -42,3 +44,5 @@ class TestLogin:
         check_result.check(case_data["check"], code, data)
 
 
+if __name__ == "__main__":
+    pytest.main("test_login")

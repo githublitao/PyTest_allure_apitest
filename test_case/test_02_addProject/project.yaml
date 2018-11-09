@@ -30,7 +30,7 @@ test_case:
       request_type: post
       parameter_type: raw
       headers:
-            Authorization: Token $key$
+            Authorization: Token ${key}$
             Content-Type: application/json
       timeout: 8
       parameter:
@@ -52,7 +52,7 @@ test_case:
       request_type: post
       parameter_type: raw
       headers:
-            Authorization: Token $key$
+            Authorization: Token ${key}$
             Content-Type: application/json
       timeout: 8
       parameter:
@@ -74,7 +74,7 @@ test_case:
       request_type: post
       parameter_type: raw
       headers:
-            Authorization: Token $key$
+            Authorization: Token ${key}$
             Content-Type: application/json
       timeout: 8
       parameter:
@@ -96,7 +96,7 @@ test_case:
       request_type: post
       parameter_type: raw
       headers:
-            Authorization: Token $key$
+            Authorization: Token ${key}$
             Content-Type: application/json
       timeout: 8
       parameter:
@@ -118,7 +118,7 @@ test_case:
       request_type: post
       parameter_type: raw
       headers:
-            Authorization: Token $key$
+            Authorization: Token ${key}$
             Content-Type: application/json
       timeout: 8
       parameter:
@@ -131,7 +131,9 @@ test_case:
             check_type: Regular_check # 正则校验
             datebase:
             expected_code: 200
-            expected_request: 存在相同名称
+            expected_request:
+                  - 存在相同名称
+                  - msg
       relevance:
 
     - test_name: 添加项目5
@@ -140,7 +142,7 @@ test_case:
       request_type: post
       parameter_type: raw
       headers:
-            Authorization: Token $key$
+            Authorization: Token ${key}$
             Content-Type: application/json
       timeout: 8
       parameter:

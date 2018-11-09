@@ -14,7 +14,6 @@ def send_request(data, host, address, relevance):
     :param relevance: 关联对象
     :return:
     """
-    print(data)
     if isinstance(data["headers"], dict):
         header = ParamManage.manage(data["headers"], relevance)  # 处理请求头
     else:

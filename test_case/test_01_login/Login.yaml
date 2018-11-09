@@ -91,7 +91,8 @@ test_case:
             check_type: Regular_check # 正则校验
             datebase:
             expected_code: 200
-            expected_request: key
+            expected_request:
+                  - key
 
     - test_name: 登陆6
       info: 正常登陆6

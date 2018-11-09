@@ -16,27 +16,33 @@ def manage(param, relevance):
             for k, i in enumerate(value):
                 param[key][k] = manage(i, relevance)
         else:  # 字符串类型
-            relevance_list = re.findall("\$(.*?)\$", value)   # 查找字符串中所有$key$ 作为关联对象
-            relevance_index = 0  # 初始化列表索引
-            for n in relevance_list:  # 遍历关联key
-                pattern = re.compile('\$' + n + '\$')  # 初始化正则匹配
-                try:
-                    if isinstance(relevance[n], list):   # 判断是关联key是否是个list
-                        try:
-                            # 替换第一个匹配到的关联
-                            param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
-                            relevance_index += 1
-                        except IndexError:
-                            # 关联值使用完后，初始化索引为0，重新匹配
-                            relevance_index = 0
-                            param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
-                            relevance_index += 1
-                    else:
-                        # 关联key是字符串，直接替换
-                        param[key] = re.sub(pattern, relevance[n], param[key])
-                except KeyError:
-                    pass
+            try:
+                relevance_list = re.findall("\${(.*?)}\$", value)   # 查找字符串中所有$key$ 作为关联对象
+                relevance_index = 0  # 初始化列表索引
+                for n in relevance_list:  # 遍历关联key
+                    pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
+                    try:
+                        if isinstance(relevance[n], list):   # 判断是关联key是否是个list
+                            try:
+                                # 替换第一个匹配到的关联
+                                param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
+                                relevance_index += 1
+                            except IndexError:
+                                # 关联值使用完后，初始化索引为0，重新匹配
+                                relevance_index = 0
+                                param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
+                                relevance_index += 1
+                        else:
+                            # 关联key是字符串，直接替换
+                            param[key] = re.sub(pattern, relevance[n], param[key])
+                    except KeyError:
+                        pass
+            except TypeError:
+                pass
     return param
+
+
+relevance = ""
 
 
 def get_value(data, value):
@@ -47,14 +53,14 @@ def get_value(data, value):
     :param value: 值
     :return:
     """
-    relevance = ""
+    global relevance
     if isinstance(data, dict):
         if value in data:
             relevance = data[value]
         else:
             for key in data:
                 relevance = get_value(data[key], value)
-    if isinstance(data, list):
+    elif isinstance(data, list):
         for key in data:
             if isinstance(key, dict):
                 relevance = get_value(key, value)
@@ -63,6 +69,8 @@ def get_value(data, value):
 
 
 if __name__ == "__main__":
-    a = {"token": "test", "a": {"b": "Token $key$ $key$ $key$ $token$"}, "c": "$word$"}
-    b = {"key": ["123", "321"], "token": "test"}
-    print(manage(a, b))
+    # a = {"token": "test", "a": {"b": "Token $key$ $key$ $key$ $token$"}, "c": "$word$"}
+    # b = {"key": ["123", "321"], "token": "test"}
+    # print(manage(a, b))
+    c = {"code": 0, "codeMessage": "success", "data": {"phone": "17150194892"}, "ts": 1531460245367}
+    print(get_value(c, "phone"))

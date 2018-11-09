@@ -60,15 +60,20 @@ def check(case_data, code, data):
     elif case_data["check_type"] == 'Regular_check':
         with allure.step("正则校验"):
             allure.attach("期望code", str(case_data["expected_code"]))
-            allure.attach('正则表达式', str(case_data["expected_request"]))
+            allure.attach('正则表达式', str(case_data["expected_request"]).replace("\'", "\""))
         if int(code) == case_data["expected_code"]:
             try:
-                result = re.findall(case_data["expected_request"], str(data))
-                if result:
-                    pass
+                result = ""
+                if isinstance(case_data["expected_request"], list):
+                    for i in case_data["expected_request"]:
+                        result = re.findall(i.replace("\"", "\'"), str(data))
+                        allure.attach('校验完成结果', str(result))
                 else:
+                    result = re.findall(case_data["expected_request"].replace("\"", "\'"), str(data))
+                    allure.attach('校验完成结果', str(result).replace("\'", "\""))
+                if not result:
                     raise failureException("无正则校验内容！ %s" % case_data["expected_request"])
-            except Exception:
+            except KeyError:
                 raise failureException("正则校验执行失败！ %s" % case_data["expected_request"])
         else:
             raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
