@@ -6,7 +6,7 @@ import yaml
 from Common import init, check_result, requestSend
 
 # 读取测试用例
-with open(r"D:\project\PyTest_allure_apitest\test_zhongtai\test_smallNumber_bind_unbind\smallNumber.yaml", 'r', encoding="utf-8") as load_f:
+with open("./test_zhongtai/test_smallNumber_bind_unbind/smallNumber.yaml", 'r', encoding="utf-8") as load_f:
     smalNumber_dict = yaml.load(load_f)
 
 relevance = dict()
