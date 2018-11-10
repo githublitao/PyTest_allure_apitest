@@ -17,23 +17,27 @@ from Common import confighttp, HostManage, ReadParam
 failureException = AssertionError
 
 
-def send_request(data, host, address, relevance):
+def send_request(data, host, address, relevance, _path):
     """
     再次封装请求
     :param data: 测试用例
     :param host: 测试地址
     :param address: 接口地址
     :param relevance: 关联对象
+    :param _path: case路径
     :return:
     """
     if isinstance(data["headers"], dict):
-        header = ReadParam.read_param(data["test_name"], data["headers"], relevance)  # 处理请求头
+        header = ReadParam.read_param(data["test_name"], data["headers"], relevance, _path)  # 处理请求头
     else:
         raise failureException("请求头格式有误  %s" % data["headers"])
-    parameter = ReadParam.read_param(data["test_name"], data["parameter"], relevance)  # 处理请求参数
+    parameter = ReadParam.read_param(data["test_name"], data["parameter"], relevance, _path)  # 处理请求参数
     try:
         # 如果用例中写了host和address，则使用用例中的host和address，若没有则使用全局的
         host = data["host"]
+    except KeyError:
+        pass
+    try:
         address = data["address"]
     except KeyError:
         pass

@@ -13,23 +13,27 @@
 import json
 from json import JSONDecodeError
 
+from Common.ParamManage import manage
+
 failureException = AssertionError
 
 
-def read_json(test_name, code_json):
+def read_json(test_name, code_json, relevance, _path):
     """
     校验内容读取
     :param test_name: 用例名称，用作索引
     :param code_json: 文件路径
+    :param relevance: 关联对象
+    :param _path: case路径
     :return:
     """
     # 用例中参数为json格式
     if isinstance(code_json, dict):
-        pass
+        code_json = manage(code_json, relevance)
     # 用例中参数非json格式
     else:
         try:
-            with open(code_json, "r", encoding="utf-8") as f:
+            with open(_path+"/"+code_json, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 for i in data:
                     # 遍历，通过用例名称做索引查找到第一个期望结果后，跳出循环
@@ -39,6 +43,8 @@ def read_json(test_name, code_json):
                 # 如果code_json为空，表示未找到用例关联的期望结果
                 if not code_json:
                     raise failureException("未找到用例关联的期望结果\n文件路径： %s\n索引： %s" % (code_json, test_name))
+                else:
+                    code_json = manage(code_json, relevance)
         # 文件不存在
         except FileNotFoundError:
             raise failureException("用例关联文件不存在\n文件路径： %s" % code_json)

@@ -14,7 +14,7 @@ import configparser
 
 
 class ConfRelevance:
-    # host文件读取配置
+    # 关联文件读取配置
     def __init__(self, _path):
         config = configparser.ConfigParser()
         config.read(_path, encoding="utf-8")

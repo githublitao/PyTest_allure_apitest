@@ -17,12 +17,13 @@ from json import JSONDecodeError
 from Common.ParamManage import manage, failureException
 
 
-def read_param(test_name, param, relevance):
+def read_param(test_name, param, relevance, _path):
     """
     判断用例中参数类型
-    :param test_name:
+    :param test_name: 用例名称
     :param param:
-    :param relevance:
+    :param relevance: 关联对象
+    :param _path: case路径
     :return:
     """
     # 用例中参数为json格式
@@ -31,7 +32,7 @@ def read_param(test_name, param, relevance):
     # 用例中参数非json格式
     else:
         try:
-            with open(param, "r", encoding="utf-8") as f:
+            with open(_path+"/"+param, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 for i in data:
                     # 通过test_name索引，提取第一个匹配到的用例参数
@@ -41,6 +42,8 @@ def read_param(test_name, param, relevance):
                 # 为空，未匹配到
                 if not param:
                     raise failureException("未找到用例关联的参数\n文件路径： %s\n索引： %s" % (param, test_name))
+                else:
+                    param = manage(param, relevance)
         except FileNotFoundError:
             raise failureException("用例关联文件不存在\n文件路径： %s" % param)
         except JSONDecodeError:

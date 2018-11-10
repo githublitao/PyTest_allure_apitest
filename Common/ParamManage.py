@@ -20,40 +20,68 @@ failureException = AssertionError
 def manage(param, relevance):
     """
     替换关联数据
-    :param param: 请求头或请求参数
+    :param param: 请求头或请求参数或期望
     :param relevance: 关联对象
     :return:
     """
-    for key, value in param.items():  # 遍历参数
-        if isinstance(value, dict):  # 判断类型元字典，递归
-            param[key] = manage(value, relevance)
-        elif isinstance(value, list):  # 判断列表类型，遍历递归
-            for k, i in enumerate(value):
-                param[key][k] = manage(i, relevance)
-        else:  # 字符串类型
-            try:
-                relevance_list = re.findall("\${(.*?)}\$", value)   # 查找字符串中所有$key$ 作为关联对象
-                relevance_index = 0  # 初始化列表索引
-                for n in relevance_list:  # 遍历关联key
-                    pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
-                    try:
-                        if isinstance(relevance[n], list):   # 判断是关联key是否是个list
-                            try:
-                                # 替换第一个匹配到的关联
-                                param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
-                                relevance_index += 1
-                            except IndexError:
-                                # 关联值使用完后，初始化索引为0，重新匹配
-                                relevance_index = 0
-                                param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
-                                relevance_index += 1
-                        else:
-                            # 关联key是字符串，直接替换
-                            param[key] = re.sub(pattern, relevance[n], param[key])
-                    except KeyError:
-                        pass
-            except TypeError:
-                pass
+    if isinstance(param, dict):  # 判断类型元字典，递归
+        for key, value in param.items():  # 遍历参数
+            if isinstance(value, dict):  # 判断类型元字典，递归
+                param[key] = manage(value, relevance)
+            elif isinstance(value, list):  # 判断列表类型，遍历递归
+                for k, i in enumerate(value):
+                    param[key][k] = manage(i, relevance)
+            else:  # 字符串类型
+                try:
+                    relevance_list = re.findall("\${(.*?)}\$", value)   # 查找字符串中所有$key$ 作为关联对象
+                    relevance_index = 0  # 初始化列表索引
+                    for n in relevance_list:  # 遍历关联key
+                        pattern = re.compile('\${' + n.lower() + '}\$')  # 初始化正则匹配
+                        try:
+                            if isinstance(relevance[n], list):   # 判断是关联key是否是个list
+                                try:
+                                    # 替换第一个匹配到的关联
+                                    param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
+                                    relevance_index += 1
+                                except IndexError:
+                                    # 关联值使用完后，初始化索引为0，重新匹配
+                                    relevance_index = 0
+                                    param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
+                                    relevance_index += 1
+                            else:
+                                # 关联key是字符串，直接替换
+                                param[key] = re.sub(pattern, relevance[n], param[key])
+                        except KeyError:
+                            pass
+                except TypeError:
+                    pass
+    elif isinstance(param, list):
+        for k, i in enumerate(param):
+            param[k] = manage(i, relevance)
+    else:  # 字符串类型
+        try:
+            relevance_list = re.findall("\${(.*?)}\$", param)  # 查找字符串中所有$key$ 作为关联对象
+            relevance_index = 0  # 初始化列表索引
+            for n in relevance_list:  # 遍历关联key
+                pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
+                try:
+                    if isinstance(relevance[n], list):  # 判断是关联key是否是个list
+                        try:
+                            # 替换第一个匹配到的关联
+                            param = re.sub(pattern, relevance[n][relevance_index], param, count=1)
+                            relevance_index += 1
+                        except IndexError:
+                            # 关联值使用完后，初始化索引为0，重新匹配
+                            relevance_index = 0
+                            param = re.sub(pattern, relevance[n][relevance_index], param, count=1)
+                            relevance_index += 1
+                    else:
+                        # 关联key是字符串，直接替换
+                        param = re.sub(pattern, relevance[n], param)
+                except KeyError:
+                    pass
+        except TypeError:
+            pass
     return param
 
 

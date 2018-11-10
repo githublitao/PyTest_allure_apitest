@@ -15,13 +15,14 @@ test_case:
       parameter_type: form-data
       headers: {}
       timeout: 8
-      parameter: ./test_case/test_01_login/Login.json
+      parameter: param.json
       file: false
       check:
             check_type: no_check # 不校验
             datebase:
             expected_code:
             expected_request:
+            CustomFail:
       relevance:
 
     - test_name: 登陆2
@@ -44,7 +45,7 @@ test_case:
           - check_type: json # 校验json格式
             datebase:
             expected_code: 200
-            expected_request: ./test_case/test_01_login/expected_Login.json
+            expected_request: expected.json
       relevance:
 
     - test_name: 登陆3
@@ -62,7 +63,7 @@ test_case:
             check_type: json # 校验json格式
             datebase:
             expected_code: 200
-            expected_request: ./test_case/test_01_login/expected_Login.json
+            expected_request: expected.json
       relevance:
 
     - test_name: 登陆4
@@ -80,7 +81,7 @@ test_case:
             check_type: entirely_check # 完全校验
             datebase:
             expected_code: 200
-            expected_request: ./test_case/test_01_login/expected_Login.json
+            expected_request: expected.json
       relevance:
 
     - test_name: 登陆5

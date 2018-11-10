@@ -45,6 +45,7 @@ test_case:
             datebase:
             expected_code:
             expected_request:
+            CustomFail:                           # 自定义失败说明
       relevance:  # 关联键
 
     - test_name: 添加项目1

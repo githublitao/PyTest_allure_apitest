@@ -15,18 +15,20 @@ import re
 
 import allure
 
-from Common import CheckJson, expectedManage
+from Common import CheckJson, expectedManage, CustomFail
 
 failureException = AssertionError
 
 
-def check(test_name, case_data, code, data):
+def check(test_name, case_data, code, data, relevance, _path):
     """
     校验测试结果
     :param test_name:  测试用例
     :param case_data:  测试用例
     :param code:  HTTP状态
     :param data:  返回的接口json数据
+    :param relevance:  关联值对象
+    :param _path:  case路径
     :return:
     """
     # 不校验
@@ -39,7 +41,7 @@ def check(test_name, case_data, code, data):
         expected_request = case_data["expected_request"]
         # 判断预期结果格式，如果是字符串，则打开文件路径，提取保存在文件中的期望结果
         if isinstance(case_data["expected_request"], str):
-                expected_request = expectedManage.read_json(test_name, expected_request)
+                expected_request = expectedManage.read_json(test_name, expected_request, relevance, _path)
         with allure.step("JSON格式校验"):
             allure.attach("期望code", str(case_data["expected_code"]))
             allure.attach('期望data', str(expected_request))
@@ -51,7 +53,11 @@ def check(test_name, case_data, code, data):
             # json校验
             CheckJson.check_json(expected_request, data)
         else:
-            raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
+            if case_data.get("CustomFail"):
+                info = CustomFail.custom_manage(case_data.get("CustomFail"), relevance)
+                raise failureException(str(info)+"\nhttp状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
+            else:
+                raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
 
     # 只校验HTTP状态
     elif case_data["check_type"] == 'only_check_status':
@@ -61,14 +67,18 @@ def check(test_name, case_data, code, data):
         if int(code) == case_data["expected_code"]:
             pass
         else:
-            raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
+            if case_data.get("CustomFail"):
+                info = CustomFail.custom_manage(case_data.get("CustomFail"), relevance)
+                raise failureException(str(info)+"\nhttp状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
+            else:
+                raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
 
     # 完全校验
     elif case_data["check_type"] == 'entirely_check':
         expected_request = case_data["expected_request"]
         # 判断预期结果格式，如果是字符串，则打开文件路径，提取保存在文件中的期望结果
         if isinstance(case_data["expected_request"], str):
-            expected_request = expectedManage.read_json(test_name, expected_request)
+            expected_request = expectedManage.read_json(test_name, expected_request, relevance, _path)
         with allure.step("完全校验"):
             allure.attach("期望code", str(case_data["expected_code"]))
             allure.attach('期望data', str(expected_request))
