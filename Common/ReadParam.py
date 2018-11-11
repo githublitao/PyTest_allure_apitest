@@ -14,7 +14,8 @@
 import json
 from json import JSONDecodeError
 
-from Common.ParamManage import manage, failureException
+from Common.ParamManage import manage
+from main import failureException
 
 
 def read_param(test_name, param, relevance, _path):

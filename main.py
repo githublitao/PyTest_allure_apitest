@@ -11,6 +11,8 @@ import pytest
 
 case_path = os.path.join(os.getcwd())
 
+failureException = AssertionError
+
 if __name__ == '__main__':
     pytest.main("%s --alluredir report" % case_path)
     # pytest.main()

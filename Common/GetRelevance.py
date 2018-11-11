@@ -43,4 +43,25 @@ def get_relevance(data, relevance_list, relevance):
                         relevance[j] = a
                 else:
                     relevance[j] = relevance_value
+            else:
+                return False
+    else:
+        relevance_value = get_value(data, relevance_list)
+        if relevance_value:
+            # 考虑到一个关联键，多个值
+            if relevance_list in relevance:
+                if isinstance(relevance_list, list):
+                    a = relevance[relevance_list]
+                    a.append(relevance_value)
+                    relevance[relevance_list] = a
+                else:
+                    a = relevance[relevance_list]
+                    b = list()
+                    b.append(a)
+                    b.append(relevance_value)
+                    relevance[relevance_list] = a
+            else:
+                relevance[relevance_list] = relevance_value
+        else:
+            return False
     return relevance

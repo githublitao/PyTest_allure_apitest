@@ -9,11 +9,9 @@
 # @FileName: GetRelevance.py
 
 # @Software: PyCharm
-
+from main import failureException
 
 result = 'success'  # 初始化结果结果为success
-
-failureException = AssertionError
 
 
 def check_json(src_data, dst_data):

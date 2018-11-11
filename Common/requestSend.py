@@ -13,8 +13,7 @@
 import allure
 
 from Common import confighttp, HostManage, ReadParam
-
-failureException = AssertionError
+from main import failureException
 
 
 def send_request(data, host, address, relevance, _path):

@@ -16,8 +16,7 @@ import re
 import allure
 
 from Common import CheckJson, expectedManage, CustomFail
-
-failureException = AssertionError
+from main import failureException
 
 
 def check(test_name, case_data, code, data, relevance, _path):

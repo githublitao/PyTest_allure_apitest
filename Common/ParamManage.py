@@ -14,9 +14,6 @@
 import re
 
 
-failureException = AssertionError
-
-
 def manage(param, relevance):
     """
     替换关联数据
@@ -36,7 +33,8 @@ def manage(param, relevance):
                     relevance_list = re.findall("\${(.*?)}\$", value)   # 查找字符串中所有$key$ 作为关联对象
                     relevance_index = 0  # 初始化列表索引
                     for n in relevance_list:  # 遍历关联key
-                        pattern = re.compile('\${' + n.lower() + '}\$')  # 初始化正则匹配
+                        pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
+                        n = n.lower()
                         try:
                             if isinstance(relevance[n], list):   # 判断是关联key是否是个list
                                 try:
@@ -50,7 +48,7 @@ def manage(param, relevance):
                                     relevance_index += 1
                             else:
                                 # 关联key是字符串，直接替换
-                                param[key] = re.sub(pattern, relevance[n], param[key])
+                                param[key] = re.sub(pattern, relevance[n], param[key], count=1)
                         except KeyError:
                             pass
                 except TypeError:

@@ -9,7 +9,6 @@
 # @FileName: GetRelevance.py
 
 # @Software: PyCharm
-
 import configparser
 import os
 

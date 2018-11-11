@@ -14,8 +14,7 @@ import json
 from json import JSONDecodeError
 
 from Common.ParamManage import manage
-
-failureException = AssertionError
+from main import failureException
 
 
 def read_json(test_name, code_json, relevance, _path):

@@ -11,8 +11,6 @@
 # @Software: PyCharm
 import yaml
 
-from config import ConfRelevance
-
 
 def ini_case(_path):
     """
@@ -22,6 +20,4 @@ def ini_case(_path):
     """
     with open(_path + "/case.yaml", 'r', encoding="utf-8") as load_f:
         project_dict = yaml.load(load_f)
-    rel = ConfRelevance.ConfRelevance(_path + "/relevance.ini")
-    relevance = rel.get_relevance_conf()
-    return project_dict, relevance
+    return project_dict
