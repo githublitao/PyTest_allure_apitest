@@ -9,6 +9,7 @@
 # @FileName: GetRelevance.py
 
 # @Software: PyCharm
+import logging
 import time
 
 import allure
@@ -27,6 +28,7 @@ def ini_request(case_dict, relevance, _path):
     :return:
     """
     if isinstance(case_dict["premise"], list):
+        logging.info("执行测试用例前置接口")
         with allure.step("接口关联请求"):
             for i in case_dict["premise"]:
                 relevance_list = relevance.copy()
@@ -34,10 +36,18 @@ def ini_request(case_dict, relevance, _path):
                     # 获取前置接口关联数据失败
                     code, data = send_request(i, case_dict["testinfo"].get("host"),
                                               case_dict["testinfo"].get("address"), relevance_list, _path)
+                    if not data:
+                        with allure.step("接口请求失败！等待三秒后重试！"):
+                            pass
+                        logging.info("接口请求失败！等待三秒后重试！")
+                        continue
                     if i["relevance"]:
                         if len(i["relevance"]):
                             relevance = get_relevance(data, i["relevance"], relevance)
                             if isinstance(relevance, bool):
+                                with allure.step("从结果中提取关联键的值失败！等待3秒后重试！"):
+                                    pass
+                                logging.info("从结果中提取关联键的值失败！等待3秒后重试！")
                                 time.sleep(3)
                                 continue
                             else:
@@ -47,6 +57,7 @@ def ini_request(case_dict, relevance, _path):
                     else:
                         break
                 if isinstance(relevance, bool):
+                    logging.info("从结果中提取关联键的值失败！重试三次失败")
                     raise failureException("获取前置接口关联数据失败")
     return relevance
 

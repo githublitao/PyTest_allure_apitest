@@ -9,7 +9,7 @@
 # @FileName: GetRelevance.py
 
 # @Software: PyCharm
-
+import logging
 import operator
 import re
 
@@ -88,17 +88,16 @@ def check(test_name, case_data, code, data, relevance, _path):
             if result:
                 pass
             else:
-                raise failureException("完全校验失败！ %s ! = %s" % (expected_request, data))
+                if case_data.get("CustomFail"):
+                    info = CustomFail.custom_manage(case_data.get("CustomFail"), relevance)
+                    raise failureException(str(info)+"\n完全校验失败！ %s ! = %s" % (expected_request, data))
+                else:
+                    raise failureException("完全校验失败！ %s ! = %s" % (expected_request, data))
         else:
             raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
 
     # 正则校验
     elif case_data["check_type"] == 'Regular_check':
-        with allure.step("正则校验"):
-            allure.attach("期望code", str(case_data["expected_code"]))
-            allure.attach('正则表达式', str(case_data["expected_request"]).replace("\'", "\""))
-            allure.attach("实际code", str(code))
-            allure.attach('实际data', str(data))
         if int(code) == case_data["expected_code"]:
             try:
                 result = ""  # 初始化校验内容
@@ -106,18 +105,27 @@ def check(test_name, case_data, code, data, relevance, _path):
                     # 多个正则表达式校验，遍历校验
                     for i in case_data["expected_request"]:
                         result = re.findall(i.replace("\"", "\'"), str(data))
-                        allure.attach(i.replace("\"", "\'")+'校验完成结果', str(result))
+                        allure.attach('校验完成结果\n', str(result))
                 else:
                     # 单个正则表达式
                     result = re.findall(case_data["expected_request"].replace("\"", "\'"), str(data))
-                    allure.attach(case_data["expected_request"].replace("\"", "\'")+'校验完成结果',
-                                  str(result).replace("\'", "\""))
+                    with allure.step("正则校验"):
+                        allure.attach("期望code", str(case_data["expected_code"]))
+                        allure.attach('正则表达式', str(case_data["expected_request"]).replace("\'", "\""))
+                        allure.attach("实际code", str(code))
+                        allure.attach('实际data', str(data))
+                        allure.attach(case_data["expected_request"].replace("\"", "\'")+'校验完成结果',
+                                      str(result).replace("\'", "\""))
                 # 未匹配到校验内容
                 if not result:
-                    raise failureException("无正则校验内容！ %s" % case_data["expected_request"])
+                    if case_data.get("CustomFail"):
+                        info = CustomFail.custom_manage(case_data.get("CustomFail"), relevance)
+                        raise failureException(str(info) + "\n正则未校验到内容！ %s" % case_data["expected_request"])
+                    else:
+                        raise failureException("正则未校验到内容！ %s" % case_data["expected_request"])
             # 正则表达式为空时
             except KeyError:
-                raise failureException("正则校验执行失败！ %s" % case_data["expected_request"])
+                raise failureException("正则校验执行失败！ %s\n正则表达式为空时" % case_data["expected_request"])
         else:
             raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
 

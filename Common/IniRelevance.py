@@ -9,10 +9,16 @@
 # @FileName: IniRelevance.py
 
 # @Software: PyCharm
+
 from config import ConfRelevance
 
 
 def ini_relevance(_path):
+    """
+    读取初始化关联文件
+    :param _path:  case路径
+    :return:
+    """
     rel = ConfRelevance.ConfRelevance(_path + "/relevance.ini")
     relevance = rel.get_relevance_conf()
     return relevance

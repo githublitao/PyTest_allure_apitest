@@ -1,0 +1,11 @@
+[
+  {
+    "test_name": "登陆3", "parameter": {"code":"999999","msg":"成功","data":{"first_name":"Tom","last_name":"","phone":"123456789","email":"123@qq.com","key":"e1dfbfd759ad46bcdc44df989ade3f1c190cc936","date_joined":"2018-06-28 02:54:00","userphoto":"/file/userphoto.jpg"}}
+  },
+  {
+    "test_name": "登陆4", "parameter": {"code":"999999","msg":"成功","data":{"first_name":"Tom","last_name":"","phone":"123456789","email":"123@qq.com","key":"e1dfbfd759ad46bcdc44df989ade3f1c190cc936","date_joined":"2018-06-28 02:54:00","userphoto":"/file/userphoto.jpg"}}
+  },
+  {
+    "test_name": "登陆2", "parameter": {"code":"999999","msg":"成功","data":{"first_name":"Tom","last_name":"","phone":"123456789","email":"123@qq.com","key":"e1dfbfd759ad46bcdc44df989ade3f1c190cc936","date_joined":"2018-06-28 02:54:00","userphoto":"/file/userphoto.jpg"}}
+  }
+]

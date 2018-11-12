@@ -100,7 +100,7 @@ test_case:
             datebase:
             expected_code: 200
             expected_request:
-                  - key
+                  - 王八蛋
       relevance:
 
     - test_name: 登陆6

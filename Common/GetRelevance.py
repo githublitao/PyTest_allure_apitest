@@ -9,7 +9,7 @@
 # @FileName: GetRelevance.py
 
 # @Software: PyCharm
-
+import logging
 
 from Common.ParamManage import get_value
 
@@ -23,6 +23,9 @@ def get_relevance(data, relevance_list, relevance):
     :return:
     """
     # 关联键是否时list
+    if not relevance_list:
+        return relevance
+    logging.debug("从返回结果中根据关联键%s提取值" % relevance_list)
     if isinstance(relevance_list, list):
         # 遍历关联键
         for j in relevance_list:
@@ -31,7 +34,7 @@ def get_relevance(data, relevance_list, relevance):
             if relevance_value:
                 # 考虑到一个关联键，多个值
                 if j in relevance:
-                    if isinstance(j, list):
+                    if isinstance(relevance[j], list):
                         a = relevance[j]
                         a.append(relevance_value)
                         relevance[j] = a
@@ -40,7 +43,7 @@ def get_relevance(data, relevance_list, relevance):
                         b = list()
                         b.append(a)
                         b.append(relevance_value)
-                        relevance[j] = a
+                        relevance[j] = b
                 else:
                     relevance[j] = relevance_value
             else:
@@ -62,6 +65,5 @@ def get_relevance(data, relevance_list, relevance):
                     relevance[relevance_list] = a
             else:
                 relevance[relevance_list] = relevance_value
-        else:
-            return False
+    logging.debug("提取后，关联键对象\n%s" % relevance)
     return relevance

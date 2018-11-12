@@ -41,7 +41,7 @@ def read_param(test_name, param, relevance, _path):
                         param = i["parameter"]
                         break
                 # 为空，未匹配到
-                if not param:
+                if not isinstance(param, dict):
                     raise failureException("未找到用例关联的参数\n文件路径： %s\n索引： %s" % (param, test_name))
                 else:
                     param = manage(param, relevance)

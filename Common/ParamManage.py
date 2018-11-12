@@ -13,6 +13,8 @@
 
 import re
 
+from Common.FunctionReplace import function_replace
+
 
 def manage(param, relevance):
     """
@@ -53,6 +55,11 @@ def manage(param, relevance):
                             pass
                 except TypeError:
                     pass
+                try:
+                    param[key] = function_replace(param[key])
+                except TypeError:
+                    pass
+
     elif isinstance(param, list):
         for k, i in enumerate(param):
             param[k] = manage(i, relevance)
@@ -78,6 +85,10 @@ def manage(param, relevance):
                         param = re.sub(pattern, relevance[n], param)
                 except KeyError:
                     pass
+        except TypeError:
+            pass
+        try:
+            param = function_replace(param)
         except TypeError:
             pass
     return param

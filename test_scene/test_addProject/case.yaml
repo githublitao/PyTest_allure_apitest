@@ -1,0 +1,55 @@
+# 用例基本信息
+testinfo:
+      id: test_addProject            # 用例ID， 用于识别     string
+      title: 添加项目流程                 # 用例标题，在报告中作为一级目录显示  必填 string
+      host: ${test_platform}$          # 请求的域名，可写死，也可写成模板关联host配置文件  选填（此处不填，每条用例必填） string
+      address: /api/project/add_project # 请求地址 选填（此处不填，每条用例必填） string
+
+# 前置条件，case之前需关联的接口
+premise:
+# 测试用例
+test_case:
+    - test_name: 登陆1    # 必填  parameter为文件路径时 string
+      info: 正常登陆1  # 选填 string
+      host: ${test_platform}$   # 基本信息中若填写，此处为选填 string
+      address: /api/user/login   # 请求接口 string
+      http_type: http             # 请求协议 string
+      request_type: post          # 请求方式 string
+      parameter_type: form-data   # 参数类型 string
+      headers: {}                # 请求头 dict
+      timeout: 8                 # 超时时间 int
+      parameter:                 # 可填实际传递参数，若参数过多，可保存在相应的参数文件中，用test_name作为索引 string or dict
+            username: litao
+            password: lt19910301
+      file: false                 # 是否上传文件，默认false，若上传文件接口，此处为文件相对路径 bool or string
+      check:             # 校验列表  list or dict
+          - check_type: no_check # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
+            datebase:
+            expected_code:
+            expected_request:
+            CustomFail:                           # 自定义失败说明
+      relevance:  # 关联的键 list or string
+              - key
+      # 第一条case，info可不填
+    - test_name: 添加项目        # 必填，parameter为文件路径时
+      info: 添加项目
+      http_type: http          # 请求协议
+      request_type: post      # 请求类型
+      parameter_type: raw     # 参数类型
+      headers:                # 请求头
+            Authorization: Token ${key}$
+            Content-Type: application/json
+      timeout: 8
+      parameter:
+            name: ${name}$
+            type: ${type}$
+            version: ${version}$
+            description: ${description}$
+      file: false
+      check:             # 校验列表  list or dict
+          - check_type: no_check # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
+            datebase:
+            expected_code:
+            expected_request:
+            CustomFail:                           # 自定义失败说明
+      relevance:  # 关联键
