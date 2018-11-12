@@ -33,6 +33,7 @@ class TestLogin:
     @allure.story("登录")
     @allure.issue("http://www.baidu.com")  # bug地址
     @allure.testcase("http://www.testlink.com")  # 用例连接地址
+    @pytest.mark.flaky(reruns=3, reruns_delay=3)
     def test_login(self, case_data):
         """
         正常登陆   # 第一条用例描述
