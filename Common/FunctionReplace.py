@@ -44,7 +44,6 @@ def function_replace(value):
         for n in float_list:
             if len(n.split(",")) == 3:
                 pattern = re.compile('\$RandomFloat\(' + n + '\)\$')  # 初始化正则匹配
-                from exercise.RandomData import RandomFloat
                 k = str(RandomFloat.random_float(n))
                 value = re.sub(pattern, k, value, count=1)
         value = function_replace(value)
