@@ -1,0 +1,804 @@
+2018-11-15 17:55:33,835 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:55:33,836 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:55:33,837 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB'}
+2018-11-15 17:55:33,840 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:34,012 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:34,013 - init.py[line:32] - INFO: 执行测试用例前置接口
+2018-11-15 17:55:34,013 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:34,013 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:34,014 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:34,014 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:34,014 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:55:34,014 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:34,014 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:34,014 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:34,015 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:34,016 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:34,205 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:34,205 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:34,205 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['key']提取值
+2018-11-15 17:55:34,205 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936'}
+2018-11-15 17:55:34,205 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:34,206 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,206 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,206 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:34,206 - requestSend.py[line:50] - INFO: 请求接口：添加项目
+2018-11-15 17:55:34,206 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/project/add_project
+2018-11-15 17:55:34,207 - requestSend.py[line:52] - INFO: 请求头: {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,207 - requestSend.py[line:53] - INFO: 请求参数: {'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB'}
+2018-11-15 17:55:34,207 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:34,208 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:34,295 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/project/add_project HTTP/1.1" 200 56
+2018-11-15 17:55:34,295 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999997', 'msg': '存在相同名称', 'data': None})
+2018-11-15 17:55:34,295 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['王八大']提取值
+2018-11-15 17:55:34,296 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936'}
+2018-11-15 17:55:34,313 - init.py[line:32] - INFO: 执行测试用例前置接口
+2018-11-15 17:55:34,313 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:34,313 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:34,313 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:34,313 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:34,313 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:55:34,314 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:34,314 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:34,314 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:34,314 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:34,315 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:34,514 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:34,515 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:34,515 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['key']提取值
+2018-11-15 17:55:34,515 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936'}
+2018-11-15 17:55:34,515 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:34,516 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,516 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,516 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:34,517 - requestSend.py[line:50] - INFO: 请求接口：添加项目1
+2018-11-15 17:55:34,517 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/project/add_project
+2018-11-15 17:55:34,517 - requestSend.py[line:52] - INFO: 请求头: {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,517 - requestSend.py[line:53] - INFO: 请求参数: {'name': 'hCfipOYk01 R3Pfe2QGwn', 'type': 'App', 'version': '30 aIEtoHYD3f', 'description': '48.58759 MwYdIyvQH5'}
+2018-11-15 17:55:34,517 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:34,518 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:34,635 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/project/add_project HTTP/1.1" 200 58
+2018-11-15 17:55:34,635 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'project_id': 691}})
+2018-11-15 17:55:34,635 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['code']提取值
+2018-11-15 17:55:34,635 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': '999999'}
+2018-11-15 17:55:34,649 - init.py[line:32] - INFO: 执行测试用例前置接口
+2018-11-15 17:55:34,649 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:34,650 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:34,650 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:34,650 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:34,650 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:55:34,650 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:34,650 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:34,650 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:34,650 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:34,652 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:34,831 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:34,832 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:34,832 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['key']提取值
+2018-11-15 17:55:34,832 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': '999999', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936'}
+2018-11-15 17:55:34,833 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:34,833 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,833 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,833 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:34,833 - requestSend.py[line:50] - INFO: 请求接口：添加项目2
+2018-11-15 17:55:34,834 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/project/add_project
+2018-11-15 17:55:34,834 - requestSend.py[line:52] - INFO: 请求头: {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:34,834 - requestSend.py[line:53] - INFO: 请求参数: {'name': '2018-11', 'type': 'Web', 'version': '321', 'description': '123'}
+2018-11-15 17:55:34,834 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:34,835 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:34,922 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/project/add_project HTTP/1.1" 200 56
+2018-11-15 17:55:34,923 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999997', 'msg': '存在相同名称', 'data': None})
+2018-11-15 17:55:34,923 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['code']提取值
+2018-11-15 17:55:34,923 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': ['999999', '999997']}
+2018-11-15 17:55:34,935 - init.py[line:32] - INFO: 执行测试用例前置接口
+2018-11-15 17:55:34,935 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:34,935 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:34,935 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:34,935 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:34,935 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:55:34,935 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:34,936 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:34,936 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:34,936 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:34,937 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:35,124 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:35,124 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:35,125 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['key']提取值
+2018-11-15 17:55:35,125 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': ['999999', '999997'], 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936'}
+2018-11-15 17:55:35,125 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:35,125 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,125 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,126 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:35,126 - requestSend.py[line:50] - INFO: 请求接口：添加项目3
+2018-11-15 17:55:35,126 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/project/add_project
+2018-11-15 17:55:35,126 - requestSend.py[line:52] - INFO: 请求头: {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,126 - requestSend.py[line:53] - INFO: 请求参数: {'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB'}
+2018-11-15 17:55:35,126 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:35,127 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:35,233 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/project/add_project HTTP/1.1" 200 56
+2018-11-15 17:55:35,233 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999997', 'msg': '存在相同名称', 'data': None})
+2018-11-15 17:55:35,233 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['code']提取值
+2018-11-15 17:55:35,233 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': ['999999', '999997', '999997']}
+2018-11-15 17:55:35,246 - init.py[line:32] - INFO: 执行测试用例前置接口
+2018-11-15 17:55:35,247 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:35,247 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:35,247 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:35,247 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:35,247 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:55:35,247 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:35,247 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:35,248 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:35,248 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:35,249 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:35,437 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:35,437 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:35,437 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['key']提取值
+2018-11-15 17:55:35,437 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': ['999999', '999997', '999997'], 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936'}
+2018-11-15 17:55:35,438 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:35,438 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,438 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,439 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:35,439 - requestSend.py[line:50] - INFO: 请求接口：添加项目4
+2018-11-15 17:55:35,439 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/project/add_project
+2018-11-15 17:55:35,439 - requestSend.py[line:52] - INFO: 请求头: {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,439 - requestSend.py[line:53] - INFO: 请求参数: {'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB'}
+2018-11-15 17:55:35,439 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:35,440 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:35,536 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/project/add_project HTTP/1.1" 200 56
+2018-11-15 17:55:35,536 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999997', 'msg': '存在相同名称', 'data': None})
+2018-11-15 17:55:35,537 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['code']提取值
+2018-11-15 17:55:35,537 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': ['999999', '999997', '999997', '999997']}
+2018-11-15 17:55:35,547 - init.py[line:32] - INFO: 执行测试用例前置接口
+2018-11-15 17:55:35,547 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:35,547 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:35,547 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:35,548 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:35,548 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:55:35,548 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:35,548 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:35,548 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:35,548 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:35,549 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:35,736 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:35,736 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:35,737 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['key']提取值
+2018-11-15 17:55:35,737 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': ['999999', '999997', '999997', '999997'], 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936'}
+2018-11-15 17:55:35,737 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:35,737 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,737 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,738 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:35,738 - requestSend.py[line:50] - INFO: 请求接口：添加项目5
+2018-11-15 17:55:35,738 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/project/add_project
+2018-11-15 17:55:35,738 - requestSend.py[line:52] - INFO: 请求头: {'Authorization': 'Token e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'Content-Type': 'application/json'}
+2018-11-15 17:55:35,738 - requestSend.py[line:53] - INFO: 请求参数: {'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB'}
+2018-11-15 17:55:35,738 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:35,739 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:35,844 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/project/add_project HTTP/1.1" 200 56
+2018-11-15 17:55:35,845 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999997', 'msg': '存在相同名称', 'data': None})
+2018-11-15 17:55:35,845 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['code']提取值
+2018-11-15 17:55:35,845 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'name': '10', 'type': 'Web', 'version': 'xnTcsS6HO5', 'description': 'AThK849aXB', '王八大': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'code': ['999999', '999997', '999997', '999997', '999997']}
+2018-11-15 17:55:35,857 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:55:35,857 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:55:35,857 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-15 17:55:35,858 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:35,858 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:35,858 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:35,859 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:35,859 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:55:35,859 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:35,859 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:35,859 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:35,859 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:35,860 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:36,045 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:36,045 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:36,052 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:36,053 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:36,053 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:36,053 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:36,053 - requestSend.py[line:50] - INFO: 请求接口：登陆2
+2018-11-15 17:55:36,053 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:36,053 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:36,053 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:36,053 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:36,055 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:36,276 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:36,276 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:36,288 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:36,288 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:36,288 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:36,288 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:36,288 - requestSend.py[line:50] - INFO: 请求接口：登陆3
+2018-11-15 17:55:36,288 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:36,289 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:36,289 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:36,289 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:36,290 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:36,468 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:36,469 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:36,478 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:36,478 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:36,478 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:36,478 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:36,479 - requestSend.py[line:50] - INFO: 请求接口：登陆4
+2018-11-15 17:55:36,479 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:36,479 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:36,479 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:36,479 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:36,480 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:36,659 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:36,660 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:36,668 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:36,669 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:36,669 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:36,669 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:36,669 - requestSend.py[line:50] - INFO: 请求接口：登陆5
+2018-11-15 17:55:36,669 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:36,669 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:36,669 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:36,669 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:36,671 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:36,863 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:36,863 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:36,870 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:36,870 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:55:36,870 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:55:36,871 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:55:36,871 - requestSend.py[line:50] - INFO: 请求接口：登陆6
+2018-11-15 17:55:36,871 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:55:36,871 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:55:36,871 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:55:36,871 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:36,872 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:55:37,075 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:55:37,075 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:55:37,083 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:55:37,084 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:55:37,084 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {}
+2018-11-15 17:55:37,084 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:37,085 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,085 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,085 - requestSend.py[line:47] - DEBUG: host处理结果：  10.4.100.209
+2018-11-15 17:55:37,085 - requestSend.py[line:50] - INFO: 请求接口：绑定小号
+2018-11-15 17:55:37,085 - requestSend.py[line:51] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/bindPhone
+2018-11-15 17:55:37,085 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,086 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '2018118195340'}
+2018-11-15 17:55:37,086 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:37,087 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 10.4.100.209
+2018-11-15 17:55:37,110 - connectionpool.py[line:396] - DEBUG: http://10.4.100.209:80 "POST /mock/13/api/newOrderLogisticsPhone/bindPhone HTTP/1.1" 200 84
+2018-11-15 17:55:37,111 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'phone': '17150194892'}, 'ts': 1531460245367})
+2018-11-15 17:55:37,111 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['phone']提取值
+2018-11-15 17:55:37,111 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'phone': '17150194892'}
+2018-11-15 17:55:37,120 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:37,121 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,121 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,121 - requestSend.py[line:47] - DEBUG: host处理结果：  10.4.100.209
+2018-11-15 17:55:37,121 - requestSend.py[line:50] - INFO: 请求接口：解绑小号
+2018-11-15 17:55:37,121 - requestSend.py[line:51] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/unbind
+2018-11-15 17:55:37,121 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,122 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '2018118195340', 'phone': '17150194892', 'smallNumber': '', 'appId': '', 'token': ''}
+2018-11-15 17:55:37,122 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:37,123 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 10.4.100.209
+2018-11-15 17:55:37,144 - connectionpool.py[line:396] - DEBUG: http://10.4.100.209:80 "POST /mock/13/api/newOrderLogisticsPhone/unbind HTTP/1.1" 200 76
+2018-11-15 17:55:37,145 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'result': True}, 'ts': 1531709137298})
+2018-11-15 17:55:37,152 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:37,152 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,152 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,153 - requestSend.py[line:47] - DEBUG: host处理结果：  10.4.100.209
+2018-11-15 17:55:37,153 - requestSend.py[line:50] - INFO: 请求接口：绑定小号
+2018-11-15 17:55:37,153 - requestSend.py[line:51] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/bindPhoneByMembersId
+2018-11-15 17:55:37,153 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,153 - requestSend.py[line:53] - INFO: 请求参数: {'memberId': '132', 'phone': 'Web', 'channelCode': '321', 'appId': '123', 'account': '', 'token': ''}
+2018-11-15 17:55:37,153 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:37,154 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 10.4.100.209
+2018-11-15 17:55:37,176 - connectionpool.py[line:396] - DEBUG: http://10.4.100.209:80 "POST /mock/13/api/newOrderLogisticsPhone/bindPhoneByMembersId HTTP/1.1" 200 84
+2018-11-15 17:55:37,176 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'phone': '17150194892'}, 'ts': 1531460245367})
+2018-11-15 17:55:37,177 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['phone']提取值
+2018-11-15 17:55:37,177 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'phone': ['17150194892', '17150194892']}
+2018-11-15 17:55:37,185 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:37,185 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,185 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,185 - requestSend.py[line:47] - DEBUG: host处理结果：  10.4.100.209
+2018-11-15 17:55:37,185 - requestSend.py[line:50] - INFO: 请求接口：解绑小号
+2018-11-15 17:55:37,185 - requestSend.py[line:51] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/unbind
+2018-11-15 17:55:37,185 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,186 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '2018118195340', 'phone': '$phone$', 'smallNumber': '', 'appId': '', 'token': ''}
+2018-11-15 17:55:37,186 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:37,187 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 10.4.100.209
+2018-11-15 17:55:37,209 - connectionpool.py[line:396] - DEBUG: http://10.4.100.209:80 "POST /mock/13/api/newOrderLogisticsPhone/unbind HTTP/1.1" 200 76
+2018-11-15 17:55:37,209 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'result': True}, 'ts': 1531709137298})
+2018-11-15 17:55:37,220 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:55:37,220 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:55:37,221 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:55:37,221 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:37,221 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,222 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,223 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:55:37,223 - requestSend.py[line:50] - INFO: 请求接口：订单收单接口
+2018-11-15 17:55:37,223 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:55:37,223 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,223 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'ordersource': '新快喝', 'to_node_id': '1488934732', 'shopBn': 'newkhronghe', 'orderType': 'normal', 'order_bn': '111120021', 'cost_item': 1256.0, 'cost_tax': None, 'createtime': '2018-09-10', 'cur_amount': 789.0, 'currency': 'CNY', 'custom_mark': None, 'discount': None, 'is_tax': False, 'invoiceType': '普通发票', 'invoiceTitle': None, 'invoiceDetails': None, 'isPaperInvoice': False, 'lastmodify': '2018-09-10', 'modified': None, 'order_items': [{'bn': '1016865', 'name': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'price': 1198.0, 'amount': 1198.0, 'weight': None, 'g_price': 978.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}, {'bn': '1012217', 'name': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'price': 58.0, 'amount': 58.0, 'weight': None, 'g_price': 23.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}], 'pay_bn': '支付宝', 'pay_status': 1, 'payed': 789.0, 'payinfo': {'cost_payment': 0, 'pay_app_id': '支付宝', 'pay_app_bn': '03', 'payAcountInfo': None, 'paymentAmount': 789.0}, 'pmt_detail': [{'pmt_amount': 219.63, 'pmt_memo': '店铺优惠 ：219.63'}, {'pmt_amount': 4.37, 'pmt_memo': '店铺优惠 ：4.37'}], 'pmt_order': 224.0, 'pmt_goods': 255.0, 'pmt_plateform': None, 'ship_status': 0, 'shipping': {'orderId': None, 'orderBn': None, 'shipping_name': '门店自配送', 'is_cod': False, 'is_protect': False, 'cost_shipping': 12.0, 'cost_protect': 0, 'sendTimeContent': ''}, 'status': 'active', 'total_amount': 789.0, 'consignee': {'orderId': None, 'orderBn': None, 'email': None, 'name': '彭先生', 'zip': '000000', 'area_state': '江苏省', 'area_city': '南京市', 'area_district': '雨花台区', 'telephone': None, 'mobile': '8B84CDDD502888900C984C1956016BE8', 'addr': '赛虹桥街道江苏省南京市雨花台区小行路20号消防中队家属院2栋3单元', 'longitude': None, 'latitude': None}, 'storeNo': None, 'isPumpSplit': None, 'shippingOrder': 2, 'isHasDelivery': None, 'deliveryVersion': None, 'channelsOrder': None, 'members_name': '6558EAFB4CE824F4EC467DE4DE5EBBC3', 'work_routine': None, 'members_phone': '8B84CDDD502888900C984C1956016BE8', 'storeName': None, 'memberAccount': None, 'memberLevel': 0, 'sellerMark': None, 'sendingTime': None, 'lastModifyDeliveryDate': None, 'taxAmount': None, 'incomeStoreNo': None, 'operatorName': None, 'taxId': None, 'registPhoneNo': None, 'registAddr': None, 'registBank': None, 'registAcct': None, 'sellerCode': None, 'sellerName': None, 'currentVersion': 'currentversion_null', 'getWalletSuccess': None}
+2018-11-15 17:55:37,223 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:37,224 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:55:37,251 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 69
+2018-11-15 17:55:37,251 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 200, 'code_msg': '加入消息队列成功,即将进入处理'})
+2018-11-15 17:55:37,260 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:37,261 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,261 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,262 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:55:37,262 - requestSend.py[line:50] - INFO: 请求接口：pos推送物流接口
+2018-11-15 17:55:37,262 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/orderLogistics/pushOrderLogistics?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:55:37,262 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,262 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111120021', 'shopBn': 'newkhronghe', 'deliveryBn': '454545467787019a', 'deliveryType': '1', 'logisticBns': ['7878241010442', '7878241010443'], 'logisticCompany': '2000387', 'logisticStatus': '4', 'dealTime': 1466391287000, 'createtime': 1466391287000, 'operatorName': 'admin'}
+2018-11-15 17:55:37,262 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:37,263 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:55:37,297 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/orderLogistics/pushOrderLogistics?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off HTTP/1.1" 200 104
+2018-11-15 17:55:37,297 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 1, 'code_msg': '处理成功', 'respBody': None, 'status': 'EXECUTE_SUCCESS', 'subMsg': '处理成功!'})
+2018-11-15 17:55:37,306 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:37,306 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,307 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,307 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:55:37,307 - requestSend.py[line:50] - INFO: 请求接口：订单状态接口反写
+2018-11-15 17:55:37,307 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/orderStatus/writeOrderStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:55:37,307 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:37,307 - requestSend.py[line:53] - INFO: 请求参数: {'orderStatusCode': '001', 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'deliveryBn': '454545467787019a', 'sendQuantity': '1', 'operatorName': '11dsfjk', 'modifytime': '2018-11-09'}
+2018-11-15 17:55:37,308 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:37,309 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:55:48,558 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:55:48,559 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:55:48,559 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:55:48,560 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:48,560 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:48,560 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:48,560 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:55:48,560 - requestSend.py[line:50] - INFO: 请求接口：订单状态接口反写
+2018-11-15 17:55:48,561 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/orderStatus/writeOrderStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:55:48,561 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:48,561 - requestSend.py[line:53] - INFO: 请求参数: {'orderStatusCode': '001', 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'deliveryBn': '454545467787019a', 'sendQuantity': '1', 'operatorName': '11dsfjk', 'modifytime': '2018-11-09'}
+2018-11-15 17:55:48,561 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:48,562 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:55:59,708 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:55:59,709 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:55:59,709 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:55:59,710 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:55:59,710 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:59,710 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:55:59,710 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:55:59,710 - requestSend.py[line:50] - INFO: 请求接口：订单状态接口反写
+2018-11-15 17:55:59,710 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/orderStatus/writeOrderStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:55:59,710 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:55:59,710 - requestSend.py[line:53] - INFO: 请求参数: {'orderStatusCode': '001', 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'deliveryBn': '454545467787019a', 'sendQuantity': '1', 'operatorName': '11dsfjk', 'modifytime': '2018-11-09'}
+2018-11-15 17:55:59,710 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:55:59,711 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:10,845 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:10,846 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:10,846 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:56:10,847 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:10,848 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:10,848 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:10,848 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:10,848 - requestSend.py[line:50] - INFO: 请求接口：订单状态接口反写
+2018-11-15 17:56:10,848 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/orderStatus/writeOrderStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:56:10,849 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:10,849 - requestSend.py[line:53] - INFO: 请求参数: {'orderStatusCode': '001', 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'deliveryBn': '454545467787019a', 'sendQuantity': '1', 'operatorName': '11dsfjk', 'modifytime': '2018-11-09'}
+2018-11-15 17:56:10,849 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:10,850 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:19,000 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:19,000 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:19,001 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:19,001 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:19,001 - requestSend.py[line:50] - INFO: 请求接口：退货订单信息处理接口
+2018-11-15 17:56:19,002 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/returnGoods/pushReturnGoodsToDb?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:56:19,002 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:19,002 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'returnGoodsBn': '559949411118', 'orderBn': '111120021', 'refundBn': '266565884844', 'orderSource': '新快喝', 'shopBn': 'newkhronghe', 'orderStatus': 'finish', 'orderTotalAmount': 789.0, 'orderCostAmount': 1256.0, 'orderPmtOrder': 479.0, 'orderPmtPlateform': 0, 'orderPayed': 144, 'returnAmount': 789.0, 'returnReason': '反倒是', 'returnExplain': '而发生', 'customMark': None, 'returnProductInfos': [{'id': 8557666, 'productName': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'gPrice': 1198.0, 'unit': None, 'specification': None, 'productBn': '1016865', 'orderBn': None, 'returnGoodsId': None, 'createTime': None, 'returnGoodsBn': None}, {'id': 8557666, 'productName': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'gPrice': 58.0, 'unit': None, 'specification': None, 'productBn': '1012217', 'orderBn': None, 'returnGoodsId': None, 'createTime': None, 'returnGoodsBn': None}], 'applyStatus': '0', 'name': 'commodo', 'zip': None, 'areaState': None, 'areaCity': None, 'areaDistrict': None, 'addr': None, 'mobile': None, 'telephone': None, 'storeNo': 'J0S1', 'storeAddress': None, 'platformSource': '新快喝', 'operatorName': '7878', 'createtime': '2018-11-10', 'applyTime': '2018-11-10', 'logisticBn': None, 'logisticCompany': None, 'costShippig': None, 'isProtect': None, 'costProtect': None, 'returnGoodsType': 0, 'returnGoodsProve': None, 'payType': None, 'accountBank': None, 'accountNo': None, 'refundState': None, 'refundCity': None, 'isAutoCreateRefund': None, 'sellerCode': None, 'sellerName': None}
+2018-11-15 17:56:19,002 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:19,003 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:20,100 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/returnGoods/pushReturnGoodsToDb?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off HTTP/1.1" 200 104
+2018-11-15 17:56:20,100 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 1, 'code_msg': '处理成功', 'respBody': None, 'status': 'EXECUTE_SUCCESS', 'subMsg': '处理成功!'})
+2018-11-15 17:56:20,109 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:20,110 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:20,110 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:20,110 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:20,110 - requestSend.py[line:50] - INFO: 请求接口：退货单审核状态反写接口
+2018-11-15 17:56:20,111 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:56:20,111 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:20,111 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'returnGoodsBn': '559949411118', 'operatorName': 'sdfsdf', 'status': 1, 'reson': 'dolor', 'operatorTime': '2018-11-09'}
+2018-11-15 17:56:20,111 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:20,112 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:20,308 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off HTTP/1.1" 200 104
+2018-11-15 17:56:20,308 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 4001, 'code_msg': '处理失败', 'respBody': None, 'status': 'EXECUTE_FAIL', 'subMsg': '处理失败!'})
+2018-11-15 17:56:23,320 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:23,321 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:23,321 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:56:23,321 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:23,322 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:23,322 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:23,322 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:23,322 - requestSend.py[line:50] - INFO: 请求接口：退货单审核状态反写接口
+2018-11-15 17:56:23,322 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:56:23,323 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:23,323 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'returnGoodsBn': '559949411118', 'operatorName': 'sdfsdf', 'status': 1, 'reson': 'dolor', 'operatorTime': '2018-11-09'}
+2018-11-15 17:56:23,323 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:23,324 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:23,498 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off HTTP/1.1" 200 104
+2018-11-15 17:56:23,498 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 4001, 'code_msg': '处理失败', 'respBody': None, 'status': 'EXECUTE_FAIL', 'subMsg': '处理失败!'})
+2018-11-15 17:56:26,511 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:26,512 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:26,512 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:56:26,513 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:26,513 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:26,513 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:26,513 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:26,514 - requestSend.py[line:50] - INFO: 请求接口：退货单审核状态反写接口
+2018-11-15 17:56:26,514 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:56:26,514 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:26,514 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'returnGoodsBn': '559949411118', 'operatorName': 'sdfsdf', 'status': 1, 'reson': 'dolor', 'operatorTime': '2018-11-09'}
+2018-11-15 17:56:26,514 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:26,515 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:26,739 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off HTTP/1.1" 200 104
+2018-11-15 17:56:26,739 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 4001, 'code_msg': '处理失败', 'respBody': None, 'status': 'EXECUTE_FAIL', 'subMsg': '处理失败!'})
+2018-11-15 17:56:29,752 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:29,753 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:29,753 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:56:29,754 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:29,754 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:29,754 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:29,755 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:29,755 - requestSend.py[line:50] - INFO: 请求接口：退货单审核状态反写接口
+2018-11-15 17:56:29,755 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off
+2018-11-15 17:56:29,755 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:29,755 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'orderBn': '111120021', 'shopBn': 'newkhronghe', 'returnGoodsBn': '559949411118', 'operatorName': 'sdfsdf', 'status': 1, 'reson': 'dolor', 'operatorTime': '2018-11-09'}
+2018-11-15 17:56:29,755 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:29,756 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:29,955 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/returnGoodsStatus/reverseReturnGoodsStatus?shopBn=meituan&timestamp=20190716190000&sign=509ea0b24c71857122c1f2d2f17155af&isRightNow=off HTTP/1.1" 200 104
+2018-11-15 17:56:29,955 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 4001, 'code_msg': '处理失败', 'respBody': None, 'status': 'EXECUTE_FAIL', 'subMsg': '处理失败!'})
+2018-11-15 17:56:30,005 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:30,006 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:30,006 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111122abdd', 'shopbn': 'newkhronghe'}
+2018-11-15 17:56:30,007 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:30,007 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,007 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,008 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:30,008 - requestSend.py[line:50] - INFO: 请求接口：订单收单接口
+2018-11-15 17:56:30,008 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:30,008 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,008 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'ordersource': '天猫', 'to_node_id': '1488934732', 'shopBn': 'newkhronghe', 'orderType': 'normal', 'order_bn': '111122abdd', 'cost_item': 1256.0, 'cost_tax': None, 'createtime': '2018-09-10', 'cur_amount': 789.0, 'currency': 'CNY', 'custom_mark': None, 'discount': None, 'is_tax': False, 'invoiceType': '普通发票', 'invoiceTitle': None, 'invoiceDetails': None, 'isPaperInvoice': False, 'lastmodify': '2018-09-10', 'modified': None, 'order_items': [{'bn': '1016865', 'name': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'price': 1198.0, 'amount': 1198.0, 'weight': None, 'g_price': 978.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}, {'bn': '1012217', 'name': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'price': 58.0, 'amount': 58.0, 'weight': None, 'g_price': 23.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}], 'pay_bn': '支付宝', 'pay_status': 1, 'payed': 789.0, 'payinfo': {'cost_payment': 0, 'pay_app_id': '支付宝', 'pay_app_bn': '03', 'payAcountInfo': None, 'paymentAmount': 789.0}, 'pmt_detail': [{'pmt_amount': 219.63, 'pmt_memo': '店铺优惠 ：219.63'}, {'pmt_amount': 4.37, 'pmt_memo': '店铺优惠 ：4.37'}], 'pmt_order': 224.0, 'pmt_goods': 255.0, 'pmt_plateform': None, 'ship_status': 0, 'shipping': {'orderId': None, 'orderBn': None, 'shipping_name': '门店自配送', 'is_cod': False, 'is_protect': False, 'cost_shipping': 12.0, 'cost_protect': 0, 'sendTimeContent': ''}, 'status': 'active', 'total_amount': 789.0, 'consignee': {'orderId': None, 'orderBn': None, 'email': None, 'name': '彭先生', 'zip': '000000', 'area_state': '江苏省', 'area_city': '南京市', 'area_district': '雨花台区', 'telephone': None, 'mobile': '8B84CDDD502888900C984C1956016BE8', 'addr': '赛虹桥街道江苏省南京市雨花台区小行路20号消防中队家属院2栋3单元', 'longitude': None, 'latitude': None}, 'storeNo': None, 'isPumpSplit': None, 'shippingOrder': 2, 'isHasDelivery': None, 'deliveryVersion': None, 'channelsOrder': None, 'members_name': 'test', 'work_routine': None, 'members_phone': None, 'storeName': None, 'memberAccount': '17761272084', 'memberLevel': 0, 'sellerMark': None, 'sendingTime': None, 'lastModifyDeliveryDate': None, 'taxAmount': None, 'incomeStoreNo': None, 'operatorName': None, 'taxId': None, 'registPhoneNo': None, 'registAddr': None, 'registBank': None, 'registAcct': None, 'sellerCode': None, 'sellerName': None, 'currentVersion': 'currentversion_null', 'getWalletSuccess': None}
+2018-11-15 17:56:30,008 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:30,010 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:30,036 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 69
+2018-11-15 17:56:30,036 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 200, 'code_msg': '加入消息队列成功,即将进入处理'})
+2018-11-15 17:56:30,045 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:30,046 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,046 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,046 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:30,046 - requestSend.py[line:50] - INFO: 请求接口：根据会员ID和主叫号码绑定小号
+2018-11-15 17:56:30,047 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/newOrderLogisticsPhone/bindPhoneByMembersId?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:30,047 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,047 - requestSend.py[line:53] - INFO: 请求参数: {'memberId': '2099739', 'phone': '17761272084', 'channelCode': 'pos', 'storeNo': None, 'appId': 'pos', 'account': '1232sdf', 'token': '4e634b8a8e5e4a1316b60ca90cf51f81'}
+2018-11-15 17:56:30,047 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:30,048 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:30,149 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/newOrderLogisticsPhone/bindPhoneByMembersId?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 84
+2018-11-15 17:56:30,150 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'ts': 1542275788542, 'data': {'phone': '17761272084'}})
+2018-11-15 17:56:30,158 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:30,158 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:30,158 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '11112798abcd', 'shopbn': 'newkhronghe', 'storeno': 'J0S1', 'storename': '江苏仓库店'}
+2018-11-15 17:56:30,159 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:30,159 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,160 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,160 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:30,160 - requestSend.py[line:50] - INFO: 请求接口：订单收单接口
+2018-11-15 17:56:30,160 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:30,160 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,160 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'ordersource': '新快喝', 'to_node_id': '1488934732', 'shopBn': 'newkhronghe', 'orderType': 'normal', 'order_bn': '11112798abcd', 'cost_item': 1256.0, 'cost_tax': None, 'createtime': '2018-09-10', 'cur_amount': 789.0, 'currency': 'CNY', 'custom_mark': None, 'discount': None, 'is_tax': False, 'invoiceType': '普通发票', 'invoiceTitle': None, 'invoiceDetails': None, 'isPaperInvoice': False, 'lastmodify': '2018-09-10', 'modified': None, 'order_items': [{'bn': '2000021', 'name': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'price': 1198.0, 'amount': 1198.0, 'weight': None, 'g_price': 978.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}, {'bn': '2000022', 'name': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'price': 58.0, 'amount': 58.0, 'weight': None, 'g_price': 23.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}], 'pay_bn': '支付宝', 'pay_status': 1, 'payed': 789.0, 'payinfo': {'cost_payment': 0, 'pay_app_id': '支付宝', 'pay_app_bn': '03', 'payAcountInfo': None, 'paymentAmount': 789.0}, 'pmt_detail': [{'pmt_amount': 219.63, 'pmt_memo': '店铺优惠 ：219.63'}, {'pmt_amount': 4.37, 'pmt_memo': '店铺优惠 ：4.37'}], 'pmt_order': 224.0, 'pmt_goods': 255.0, 'pmt_plateform': None, 'ship_status': 0, 'shipping': {'orderId': None, 'orderBn': None, 'shipping_name': '门店自配送', 'is_cod': False, 'is_protect': False, 'cost_shipping': 12.0, 'cost_protect': 0, 'sendTimeContent': ''}, 'status': 'active', 'total_amount': 789.0, 'consignee': {'orderId': None, 'orderBn': None, 'email': None, 'name': '彭先生', 'zip': '000000', 'area_state': '江苏省', 'area_city': '南京市', 'area_district': '雨花台区', 'telephone': None, 'mobile': '8B84CDDD502888900C984C1956016BE8', 'addr': '赛虹桥街道江苏省南京市雨花台区小行路20号消防中队家属院2栋3单元', 'longitude': None, 'latitude': None}, 'storeNo': None, 'isPumpSplit': None, 'shippingOrder': 2, 'isHasDelivery': None, 'deliveryVersion': None, 'channelsOrder': None, 'members_name': '6558EAFB4CE824F4EC467DE4DE5EBBC3', 'work_routine': None, 'members_phone': '8B84CDDD502888900C984C1956016BE8', 'storeName': None, 'memberAccount': None, 'memberLevel': 0, 'sellerMark': None, 'sendingTime': None, 'lastModifyDeliveryDate': None, 'taxAmount': None, 'incomeStoreNo': None, 'operatorName': None, 'taxId': None, 'registPhoneNo': None, 'registAddr': None, 'registBank': None, 'registAcct': None, 'sellerCode': None, 'sellerName': None, 'currentVersion': 'currentversion_null', 'getWalletSuccess': None}
+2018-11-15 17:56:30,161 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:30,162 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:30,186 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 69
+2018-11-15 17:56:30,187 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 200, 'code_msg': '加入消息队列成功,即将进入处理'})
+2018-11-15 17:56:30,197 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:30,197 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,198 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,198 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:30,198 - requestSend.py[line:50] - INFO: 请求接口：门店改派接口
+2018-11-15 17:56:30,198 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/storeReassign/reassignHandler?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:30,199 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,199 - requestSend.py[line:53] - INFO: 请求参数: {'id': 77829560, 'orderBn': '11112798abcd', 'shopBn': 'newkhronghe', 'storeNo': 'J0S1', 'storeName': '江苏仓库店', 'newStoreNo': 'W031', 'newStoreName': '四川成都旗舰店', 'areaState': '四川省', 'areaCity': '成都市', 'areaDistrict': '武侯区', 'addr': '环球中心', 'applyTime': '2018-11-10', 'reassignReason': '无货', 'mark': None, 'operatorName': 'rjf'}
+2018-11-15 17:56:30,199 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:30,200 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:30,253 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/storeReassign/reassignHandler?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 125
+2018-11-15 17:56:30,253 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 1, 'code_msg': '处理成功', 'respBody': '该订单信息中台接收成功!', 'status': 'EXECUTE_SUCCESS', 'subMsg': None})
+2018-11-15 17:56:30,263 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:30,264 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:30,264 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111120021ss', 'shopbn': 'newkhronghe', 'deliverybn': '454545467787019a', 'returngoodsbn': '559949411118'}
+2018-11-15 17:56:30,264 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:30,265 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,265 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,266 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:30,266 - requestSend.py[line:50] - INFO: 请求接口：订单收单接口
+2018-11-15 17:56:30,266 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:30,266 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,266 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'ordersource': '天猫', 'to_node_id': '1488934732', 'shopBn': 'newkhronghe', 'orderType': 'normal', 'order_bn': '111120021ss', 'cost_item': 1256.0, 'cost_tax': None, 'createtime': '2018-09-10', 'cur_amount': 789.0, 'currency': 'CNY', 'custom_mark': None, 'discount': None, 'is_tax': False, 'invoiceType': '普通发票', 'invoiceTitle': None, 'invoiceDetails': None, 'isPaperInvoice': False, 'lastmodify': '2018-09-10', 'modified': None, 'order_items': [{'bn': '1016865', 'name': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'price': 1198.0, 'amount': 1198.0, 'weight': None, 'g_price': 978.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}, {'bn': '1012217', 'name': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'price': 58.0, 'amount': 58.0, 'weight': None, 'g_price': 23.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}], 'pay_bn': '支付宝', 'pay_status': 1, 'payed': 789.0, 'payinfo': {'cost_payment': 0, 'pay_app_id': '支付宝', 'pay_app_bn': '03', 'payAcountInfo': None, 'paymentAmount': 789.0}, 'pmt_detail': [{'pmt_amount': 219.63, 'pmt_memo': '店铺优惠 ：219.63'}, {'pmt_amount': 4.37, 'pmt_memo': '店铺优惠 ：4.37'}], 'pmt_order': 224.0, 'pmt_goods': 255.0, 'pmt_plateform': None, 'ship_status': 0, 'shipping': {'orderId': None, 'orderBn': None, 'shipping_name': '门店自配送', 'is_cod': False, 'is_protect': False, 'cost_shipping': 12.0, 'cost_protect': 0, 'sendTimeContent': ''}, 'status': 'active', 'total_amount': 789.0, 'consignee': {'orderId': None, 'orderBn': None, 'email': None, 'name': '彭先生', 'zip': '000000', 'area_state': '江苏省', 'area_city': '南京市', 'area_district': '雨花台区', 'telephone': None, 'mobile': '19878637829', 'addr': '赛虹桥街道江苏省南京市雨花台区小行路20号消防中队家属院2栋3单元', 'longitude': None, 'latitude': None}, 'storeNo': None, 'isPumpSplit': None, 'shippingOrder': 2, 'isHasDelivery': None, 'deliveryVersion': None, 'channelsOrder': None, 'members_name': '6558EAFB4CE824F4EC467DE4DE5EBBC3', 'work_routine': None, 'members_phone': '8B84CDDD502888900C984C1956016BE8', 'storeName': None, 'memberAccount': None, 'memberLevel': 0, 'sellerMark': None, 'sendingTime': None, 'lastModifyDeliveryDate': None, 'taxAmount': None, 'incomeStoreNo': None, 'operatorName': None, 'taxId': None, 'registPhoneNo': None, 'registAddr': None, 'registBank': None, 'registAcct': None, 'sellerCode': None, 'sellerName': None, 'currentVersion': 'currentversion_null', 'getWalletSuccess': None}
+2018-11-15 17:56:30,266 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:30,267 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:30,283 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 69
+2018-11-15 17:56:30,283 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 200, 'code_msg': '加入消息队列成功,即将进入处理'})
+2018-11-15 17:56:30,292 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:30,293 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,293 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,293 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:30,293 - requestSend.py[line:50] - INFO: 请求接口：订单号绑定小号
+2018-11-15 17:56:30,294 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/newOrderLogisticsPhone/bindPhone?shopBn=newkhronghe&timestamp=20190716190000&sign=d82e03a1a2012f314904774909446de6&isRightNow=off
+2018-11-15 17:56:30,294 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,294 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111120021ss', 'phone': '18782961185', 'callType': 0, 'appId': 'pos', 'token': '4e634b8a8e5e4a1316b60ca90cf51f81', 'account': '1919003', 'storeNo': 'W031'}
+2018-11-15 17:56:30,294 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:30,295 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:30,834 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/newOrderLogisticsPhone/bindPhone?shopBn=newkhronghe&timestamp=20190716190000&sign=d82e03a1a2012f314904774909446de6&isRightNow=off HTTP/1.1" 200 84
+2018-11-15 17:56:30,834 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'ts': 1542275789176, 'data': {'phone': '17150144644'}})
+2018-11-15 17:56:30,843 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:30,843 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,844 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,844 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:30,844 - requestSend.py[line:50] - INFO: 请求接口：订单号解绑小号
+2018-11-15 17:56:30,844 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/orderLogisticsPhone/unbind?shopBn=newkhronghe&timestamp=20190716190000&sign=d82e03a1a2012f314904774909446de6&isRightNow=off
+2018-11-15 17:56:30,844 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:30,844 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111120021ss', 'phone': '18782961185', 'smallNumber': '17150144384', 'logisticsType': None, 'callType': None}
+2018-11-15 17:56:30,844 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:30,846 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:31,176 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/orderLogisticsPhone/unbind?shopBn=newkhronghe&timestamp=20190716190000&sign=d82e03a1a2012f314904774909446de6&isRightNow=off HTTP/1.1" 200 76
+2018-11-15 17:56:31,176 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'ts': 1542275789618, 'data': {'result': True}})
+2018-11-15 17:56:31,295 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:31,296 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:31,296 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '1111224576d', 'shopbn': 'newkhronghe', 'returngoodsbn': 'N1531913566783299K3'}
+2018-11-15 17:56:31,296 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:31,297 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,297 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,298 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:31,298 - requestSend.py[line:50] - INFO: 请求接口：订单收单接口
+2018-11-15 17:56:31,298 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:31,298 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,298 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'ordersource': '天猫', 'to_node_id': '1488934732', 'shopBn': 'newkhronghe', 'orderType': 'normal', 'order_bn': '1111224576d', 'cost_item': 1256.0, 'cost_tax': None, 'createtime': '2018-09-10', 'cur_amount': 789.0, 'currency': 'CNY', 'custom_mark': None, 'discount': None, 'is_tax': False, 'invoiceType': '普通发票', 'invoiceTitle': None, 'invoiceDetails': None, 'isPaperInvoice': False, 'lastmodify': '2018-09-10', 'modified': None, 'order_items': [{'bn': '1016865', 'name': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'price': 1198.0, 'amount': 1198.0, 'weight': None, 'g_price': 978.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}, {'bn': '1012217', 'name': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'price': 58.0, 'amount': 58.0, 'weight': None, 'g_price': 23.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}], 'pay_bn': '支付宝', 'pay_status': 1, 'payed': 789.0, 'payinfo': {'cost_payment': 0, 'pay_app_id': '支付宝', 'pay_app_bn': '03', 'payAcountInfo': None, 'paymentAmount': 789.0}, 'pmt_detail': [{'pmt_amount': 219.63, 'pmt_memo': '店铺优惠 ：219.63'}, {'pmt_amount': 4.37, 'pmt_memo': '店铺优惠 ：4.37'}], 'pmt_order': 224.0, 'pmt_goods': 255.0, 'pmt_plateform': None, 'ship_status': 0, 'shipping': {'orderId': None, 'orderBn': None, 'shipping_name': '门店自配送', 'is_cod': False, 'is_protect': False, 'cost_shipping': 12.0, 'cost_protect': 0, 'sendTimeContent': ''}, 'status': 'active', 'total_amount': 789.0, 'consignee': {'orderId': None, 'orderBn': None, 'email': None, 'name': '彭先生', 'zip': '000000', 'area_state': '江苏省', 'area_city': '南京市', 'area_district': '雨花台区', 'telephone': None, 'mobile': '8B84CDDD502888900C984C1956016BE8', 'addr': '赛虹桥街道江苏省南京市雨花台区小行路20号消防中队家属院2栋3单元', 'longitude': None, 'latitude': None}, 'storeNo': None, 'isPumpSplit': None, 'shippingOrder': 2, 'isHasDelivery': None, 'deliveryVersion': None, 'channelsOrder': None, 'members_name': 'test', 'work_routine': None, 'members_phone': None, 'storeName': None, 'memberAccount': '17761272084', 'memberLevel': 0, 'sellerMark': None, 'sendingTime': None, 'lastModifyDeliveryDate': None, 'taxAmount': None, 'incomeStoreNo': None, 'operatorName': None, 'taxId': None, 'registPhoneNo': None, 'registAddr': None, 'registBank': None, 'registAcct': None, 'sellerCode': None, 'sellerName': None, 'currentVersion': 'currentversion_null', 'getWalletSuccess': None}
+2018-11-15 17:56:31,298 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:31,299 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:31,325 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 69
+2018-11-15 17:56:31,325 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 200, 'code_msg': '加入消息队列成功,即将进入处理'})
+2018-11-15 17:56:31,338 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:31,339 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,339 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,340 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:31,340 - requestSend.py[line:50] - INFO: 请求接口：退货单信息处理接口
+2018-11-15 17:56:31,340 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/returnGoods/pushAndSaveReturnGoods?shopBn=mendianapp&timestamp=20190716190000&sign=483b4f45c285d61d58596ae7fefbdb84
+2018-11-15 17:56:31,340 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,340 - requestSend.py[line:53] - INFO: 请求参数: {'costShippig': 0, 'orderPmtOrder': 0, 'applyTime': 1531913662000, 'protect': False, 'applyStatus': '2', 'returnGoodsBn': 'N1531913566783299K3', 'storeNo': 'W031', 'createtime': 1531843200000, 'orderSource': 'pos', 'orderCostAmount': 0.5, 'storeAddress': '天府大道1700号', 'orderStatus': 'finish', 'orderTotalAmount': 0.5, 'operatorName': '运维专用', 'platformSource': 'pos', 'orderPmtPlateform': 0, 'shopBn': 'mendianapp', 'returnAmount': 0.5, 'orderBn': '1111224576d', 'returnProductInfos': [{'unit': 'EA', 'productBn': '2000022', 'specification': '1', 'quantity': 1, 'orderBn': '1111224576d', 'productName': '1919环保袋', 'gPrice': 120}], 'costProtect': 0, 'mobile': '199C16C72C98BEF2B438CD355924BB8F'}
+2018-11-15 17:56:31,340 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:31,341 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:31,468 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/returnGoods/pushAndSaveReturnGoods?shopBn=mendianapp&timestamp=20190716190000&sign=483b4f45c285d61d58596ae7fefbdb84 HTTP/1.1" 200 104
+2018-11-15 17:56:31,469 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 1, 'code_msg': '处理成功', 'respBody': None, 'status': 'EXECUTE_SUCCESS', 'subMsg': '处理成功!'})
+2018-11-15 17:56:31,481 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:31,481 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:31,481 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111122abddddd', 'shopbn': 'newkhronghe'}
+2018-11-15 17:56:31,482 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:31,482 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,483 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,483 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:31,483 - requestSend.py[line:50] - INFO: 请求接口：订单收单接口
+2018-11-15 17:56:31,483 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:31,483 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:31,484 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'ordersource': '新快喝', 'to_node_id': '1488934732', 'shopBn': 'newkhronghe', 'orderType': 'normal', 'order_bn': '111122abddddd', 'cost_item': 1256.0, 'cost_tax': None, 'createtime': '2018-09-10', 'cur_amount': 789.0, 'currency': 'CNY', 'custom_mark': None, 'discount': None, 'is_tax': False, 'invoiceType': '普通发票', 'invoiceTitle': None, 'invoiceDetails': None, 'isPaperInvoice': False, 'lastmodify': '2018-09-10', 'modified': None, 'order_items': [{'bn': '1016865', 'name': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'price': 1198.0, 'amount': 1198.0, 'weight': None, 'g_price': 978.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}, {'bn': '1012217', 'name': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'price': 58.0, 'amount': 58.0, 'weight': None, 'g_price': 23.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}], 'pay_bn': '支付宝', 'pay_status': 1, 'payed': 789.0, 'payinfo': {'cost_payment': 0, 'pay_app_id': '支付宝', 'pay_app_bn': '03', 'payAcountInfo': None, 'paymentAmount': 789.0}, 'pmt_detail': [{'pmt_amount': 219.63, 'pmt_memo': '店铺优惠 ：219.63'}, {'pmt_amount': 4.37, 'pmt_memo': '店铺优惠 ：4.37'}], 'pmt_order': 224.0, 'pmt_goods': 255.0, 'pmt_plateform': None, 'ship_status': 0, 'shipping': {'orderId': None, 'orderBn': None, 'shipping_name': '门店自配送', 'is_cod': False, 'is_protect': False, 'cost_shipping': 12.0, 'cost_protect': 0, 'sendTimeContent': ''}, 'status': 'active', 'total_amount': 789.0, 'consignee': {'orderId': None, 'orderBn': None, 'email': None, 'name': '彭先生', 'zip': '000000', 'area_state': '江苏省', 'area_city': '南京市', 'area_district': '雨花台区', 'telephone': None, 'mobile': '8B84CDDD502888900C984C1956016BE8', 'addr': '赛虹桥街道江苏省南京市雨花台区小行路20号消防中队家属院2栋3单元', 'longitude': None, 'latitude': None}, 'storeNo': None, 'isPumpSplit': None, 'shippingOrder': 2, 'isHasDelivery': None, 'deliveryVersion': None, 'channelsOrder': None, 'members_name': '6558EAFB4CE824F4EC467DE4DE5EBBC3', 'work_routine': None, 'members_phone': '8B84CDDD502888900C984C1956016BE8', 'storeName': None, 'memberAccount': None, 'memberLevel': 0, 'sellerMark': None, 'sendingTime': None, 'lastModifyDeliveryDate': None, 'taxAmount': None, 'incomeStoreNo': None, 'operatorName': None, 'taxId': None, 'registPhoneNo': None, 'registAddr': None, 'registBank': None, 'registAcct': None, 'sellerCode': None, 'sellerName': None, 'currentVersion': 'currentversion_null', 'getWalletSuccess': None}
+2018-11-15 17:56:31,484 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:31,485 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:31,509 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 69
+2018-11-15 17:56:31,510 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 200, 'code_msg': '加入消息队列成功,即将进入处理'})
+2018-11-15 17:56:31,519 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:31,520 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Cookie': 'JSESSIONID=9160E84F5BF85DD0D73FDE518868ED40'}
+2018-11-15 17:56:31,520 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Cookie': 'JSESSIONID=9160E84F5BF85DD0D73FDE518868ED40'}
+2018-11-15 17:56:31,520 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:8098
+2018-11-15 17:56:31,520 - requestSend.py[line:50] - INFO: 请求接口：中台取消接口
+2018-11-15 17:56:31,520 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:8098/omsAdmin/admin/cancel/cancelOrder.jhtml
+2018-11-15 17:56:31,520 - requestSend.py[line:52] - INFO: 请求头: {'Cookie': 'JSESSIONID=9160E84F5BF85DD0D73FDE518868ED40'}
+2018-11-15 17:56:31,520 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111122abddddd', 'cancelMask': 'sdfsdf', 'cancelComment': 'sdfsdfsdf'}
+2018-11-15 17:56:31,520 - requestSend.py[line:81] - INFO: GET请求接口
+2018-11-15 17:56:31,522 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:31,706 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:8098 "GET /omsAdmin/admin/cancel/cancelOrder.jhtml?orderBn=111122abddddd&cancelMask=sdfsdf&cancelComment=sdfsdfsdf HTTP/1.1" 302 0
+2018-11-15 17:56:31,706 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.13
+2018-11-15 17:56:31,887 - connectionpool.py[line:396] - DEBUG: http://13.14.100.13:8087 "GET /casserver/login?service=http://13.14.100.14:8098/omsAdmin/mainFrame HTTP/1.1" 200 3833
+2018-11-15 17:56:31,888 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, '')
+2018-11-15 17:56:31,896 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:31,896 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:31,896 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'eaIqnLSJ5X', 'description': 'Z1JsU4CnW0'}
+2018-11-15 17:56:31,897 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:31,897 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:31,897 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:31,898 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:56:31,898 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:56:31,898 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:56:31,898 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:31,898 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:56:31,898 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:31,899 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:56:32,092 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:56:32,092 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:56:35,105 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:35,106 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:35,106 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'amWLSrICZX', 'description': '8QhsOf5nTA'}
+2018-11-15 17:56:35,107 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:35,107 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:35,107 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:35,107 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:56:35,107 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:56:35,107 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:56:35,107 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:35,107 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:56:35,108 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:35,109 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:56:35,298 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:56:35,298 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:56:38,310 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:38,311 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:38,311 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'rDqIgdMbh7', 'description': 'ktKwmNX16g'}
+2018-11-15 17:56:38,312 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:38,312 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:38,312 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:38,312 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:56:38,313 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:56:38,313 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:56:38,313 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:38,313 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:56:38,313 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:38,314 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:56:38,492 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:56:38,492 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:56:41,505 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:41,505 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:41,505 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'MpBUGvR3Dw', 'description': 'Rcwg4uFe6M'}
+2018-11-15 17:56:41,506 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:41,506 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:41,506 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:41,507 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-15 17:56:41,507 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-15 17:56:41,507 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-15 17:56:41,507 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:41,507 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-15 17:56:41,507 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:41,508 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:56:41,696 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:56:41,696 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-15 17:56:41,750 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:41,751 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:41,751 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111127ddd', 'shopbn': 'newkhronghe', 'storeno': 'J0S1', 'storename': '江苏仓库店'}
+2018-11-15 17:56:41,751 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:41,752 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:41,752 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-15 17:56:41,753 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:41,753 - requestSend.py[line:50] - INFO: 请求接口：订单收单接口
+2018-11-15 17:56:41,753 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:41,753 - requestSend.py[line:52] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-15 17:56:41,753 - requestSend.py[line:53] - INFO: 请求参数: {'id': None, 'ordersource': '新快喝', 'to_node_id': '1488934732', 'shopBn': 'newkhronghe', 'orderType': 'normal', 'order_bn': '111127ddd', 'cost_item': 1256.0, 'cost_tax': None, 'createtime': '2018-09-10', 'cur_amount': 789.0, 'currency': 'CNY', 'custom_mark': None, 'discount': None, 'is_tax': False, 'invoiceType': '普通发票', 'invoiceTitle': None, 'invoiceDetails': None, 'isPaperInvoice': False, 'lastmodify': '2018-09-10', 'modified': None, 'order_items': [{'bn': '2000021', 'name': '【欢聚价】【极速达】1919酒类直供43度飞天茅台 贵州 国产酱香型白酒500ml', 'quantity': 1, 'price': 1198.0, 'amount': 1198.0, 'weight': None, 'g_price': 978.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}, {'bn': '2000022', 'name': '1919酒类直供 古南丰金六年花雕酒 500mL 黄酒 糯米酒', 'quantity': 1, 'price': 58.0, 'amount': 58.0, 'weight': None, 'g_price': 23.0, 'productType': '商品', 'isOwnBn': False, 'splitProducts': [], 'productRebateAmount': None, 'rechargeRebateAmount': None}], 'pay_bn': '支付宝', 'pay_status': 1, 'payed': 789.0, 'payinfo': {'cost_payment': 0, 'pay_app_id': '支付宝', 'pay_app_bn': '03', 'payAcountInfo': None, 'paymentAmount': 789.0}, 'pmt_detail': [{'pmt_amount': 219.63, 'pmt_memo': '店铺优惠 ：219.63'}, {'pmt_amount': 4.37, 'pmt_memo': '店铺优惠 ：4.37'}], 'pmt_order': 224.0, 'pmt_goods': 255.0, 'pmt_plateform': None, 'ship_status': 0, 'shipping': {'orderId': None, 'orderBn': None, 'shipping_name': '门店自配送', 'is_cod': False, 'is_protect': False, 'cost_shipping': 12.0, 'cost_protect': 0, 'sendTimeContent': ''}, 'status': 'active', 'total_amount': 789.0, 'consignee': {'orderId': None, 'orderBn': None, 'email': None, 'name': '彭先生', 'zip': '000000', 'area_state': '江苏省', 'area_city': '南京市', 'area_district': '雨花台区', 'telephone': None, 'mobile': '8B84CDDD502888900C984C1956016BE8', 'addr': '赛虹桥街道江苏省南京市雨花台区小行路20号消防中队家属院2栋3单元', 'longitude': None, 'latitude': None}, 'storeNo': None, 'isPumpSplit': None, 'shippingOrder': 2, 'isHasDelivery': None, 'deliveryVersion': None, 'channelsOrder': None, 'members_name': '6558EAFB4CE824F4EC467DE4DE5EBBC3', 'work_routine': None, 'members_phone': '8B84CDDD502888900C984C1956016BE8', 'storeName': None, 'memberAccount': None, 'memberLevel': 0, 'sellerMark': None, 'sendingTime': None, 'lastModifyDeliveryDate': None, 'taxAmount': None, 'incomeStoreNo': None, 'operatorName': None, 'taxId': None, 'registPhoneNo': None, 'registAddr': None, 'registBank': None, 'registAcct': None, 'sellerCode': None, 'sellerName': None, 'currentVersion': 'currentversion_null', 'getWalletSuccess': None}
+2018-11-15 17:56:41,753 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:41,755 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:41,771 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/api/pushOrder/order?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 69
+2018-11-15 17:56:41,772 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 200, 'code_msg': '加入消息队列成功,即将进入处理'})
+2018-11-15 17:56:41,782 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:41,782 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:41,782 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:41,783 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:41,783 - requestSend.py[line:50] - INFO: 请求接口：订单取消接口
+2018-11-15 17:56:41,783 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:41,783 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:41,783 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111127ddd', 'cancelMask': 'skwod'}
+2018-11-15 17:56:41,783 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:41,784 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:41,914 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 72
+2018-11-15 17:56:41,915 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 2502, 'msg': '该订单已经取消或完结,不能再次操作!'})
+2018-11-15 17:56:44,928 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:44,929 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:44,929 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111127ddd', 'shopbn': 'newkhronghe', 'storeno': 'J0S1', 'storename': '江苏仓库店'}
+2018-11-15 17:56:44,931 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:56:45,098 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:56:45,099 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:45,099 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:45,099 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:45,100 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:45,100 - requestSend.py[line:50] - INFO: 请求接口：订单取消接口
+2018-11-15 17:56:45,100 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:45,100 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:45,100 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111127ddd', 'cancelMask': 'skwod'}
+2018-11-15 17:56:45,100 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:45,101 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:45,258 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 72
+2018-11-15 17:56:45,258 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 2502, 'msg': '该订单已经取消或完结,不能再次操作!'})
+2018-11-15 17:56:48,271 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:48,272 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:48,272 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111127ddd', 'shopbn': 'newkhronghe', 'storeno': 'J0S1', 'storename': '江苏仓库店'}
+2018-11-15 17:56:48,274 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:56:48,454 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:56:48,455 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:48,455 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:48,455 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:48,456 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:48,456 - requestSend.py[line:50] - INFO: 请求接口：订单取消接口
+2018-11-15 17:56:48,456 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:48,456 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:48,456 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111127ddd', 'cancelMask': 'skwod'}
+2018-11-15 17:56:48,456 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:48,457 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:48,590 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 72
+2018-11-15 17:56:48,590 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 2502, 'msg': '该订单已经取消或完结,不能再次操作!'})
+2018-11-15 17:56:51,604 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-15 17:56:51,605 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-15 17:56:51,605 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'order_bn': '111127ddd', 'shopbn': 'newkhronghe', 'storeno': 'J0S1', 'storename': '江苏仓库店'}
+2018-11-15 17:56:51,606 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 120.79.232.23
+2018-11-15 17:56:51,777 - connectionpool.py[line:396] - DEBUG: http://120.79.232.23:80 "POST /api/user/login HTTP/1.1" 200 235
+2018-11-15 17:56:51,778 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-15 17:56:51,778 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-15 17:56:51,779 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-15 17:56:51,779 - requestSend.py[line:47] - DEBUG: host处理结果：  13.14.100.14:18181
+2018-11-15 17:56:51,779 - requestSend.py[line:50] - INFO: 请求接口：订单取消接口
+2018-11-15 17:56:51,779 - requestSend.py[line:51] - INFO: 请求地址：http://13.14.100.14:18181/centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true
+2018-11-15 17:56:51,779 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-15 17:56:51,779 - requestSend.py[line:53] - INFO: 请求参数: {'orderBn': '111127ddd', 'cancelMask': 'skwod'}
+2018-11-15 17:56:51,780 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-15 17:56:51,781 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 13.14.100.14
+2018-11-15 17:56:51,936 - connectionpool.py[line:396] - DEBUG: http://13.14.100.14:18181 "POST /centerDocker/order/aftersale/cancel?shopBn=tianmao&timestamp=20190716190000&sign=22d843399f02bc3ab64c24eaaab024d8&isRightNow=true HTTP/1.1" 200 72
+2018-11-15 17:56:51,936 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': 2502, 'msg': '该订单已经取消或完结,不能再次操作!'})
