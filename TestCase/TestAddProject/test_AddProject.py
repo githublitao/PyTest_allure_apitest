@@ -14,9 +14,7 @@ from config.ConfigLogs import LogConfig
 
 PATH = os.path.split(os.path.realpath(__file__))[0]
 
-
 case_dict = ini_case(PATH)
-# relevance = ini_relevance(PATH)
 
 
 @allure.feature(case_dict["testinfo"]["title"])  # feature定义功能

@@ -4,3 +4,4 @@ pytest==3.9.3
 pytest_allure_adaptor==1.7.10
 PyYAML==3.13
 configparser==3.5.0
+pytest-rerunfailures==5.0
