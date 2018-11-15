@@ -33,3 +33,9 @@ def host_manage(host):
     except TypeError:
         pass
     return host
+
+
+if __name__ == "__main__":
+    _custom_fail = "这是一段${test_platform}$用的数据"
+    _relevance = {"test": "测试"}
+    print(host_manage(_custom_fail))

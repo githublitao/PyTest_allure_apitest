@@ -25,10 +25,11 @@ class TestAddProject:
     @classmethod
     def setup_class(cls):
         cls.rel = ini_relevance(PATH)
+        cls.result = {"result": True}
 
     def setup(self):
         self.relevance = self.rel.copy()
-        self.relevance = init.ini_request(case_dict, self.relevance, PATH)
+        self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
 
     # @pytest.mark.skipif(sys.version_info < (3, 6))  # 跳过条件
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
@@ -36,7 +37,7 @@ class TestAddProject:
     @allure.issue("http://www.baidu.com")  # bug地址
     @allure.testcase("http://www.testlink.com")  # 用例连接地址
     @pytest.mark.flaky(reruns=3, reruns_delay=3)
-    def test_add_project(self, case_data):
+    def test_add_project(self, case_data, login):
         """
         添加项目测试  # 第一条用例描述
         :param case_data: 参数化用例的形参
@@ -51,7 +52,7 @@ class TestAddProject:
             except IndexError:
                 pass
         # 发送测试请求
-        api_send_check(case_data, case_dict,  self.relevance, self.rel,  PATH)
+        api_send_check(case_data, case_dict,  self.relevance, self.rel,  PATH, self.result)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,780 @@
+2018-11-12 17:18:14,312 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:18:14,312 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:18:14,313 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:18:14,314 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:18:14,314 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:18:14,314 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:18:14,315 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:18:14,315 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:18:14,315 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:18:14,315 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:18:14,315 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:18:14,315 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:18:14,319 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:18:25,553 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:18:25,554 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:18:25,554 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:18:25,554 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:18:25,555 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:18:25,555 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:18:25,555 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:18:25,555 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:18:25,555 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:18:25,555 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:18:25,556 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:18:25,556 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:18:25,557 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:18:36,685 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:18:36,686 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:18:36,686 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:18:36,687 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:18:36,687 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:18:36,688 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:18:36,688 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:18:36,688 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:18:36,688 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:18:36,688 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:18:36,688 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:18:36,688 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:18:36,690 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:18:47,816 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:18:47,817 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:18:47,817 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:18:47,818 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:18:47,818 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:18:47,818 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:18:47,819 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:18:47,819 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:18:47,819 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:18:47,819 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:18:47,819 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:18:47,819 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:18:47,820 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:18:55,982 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:18:55,982 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:18:55,982 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:18:55,983 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:18:55,983 - requestSend.py[line:48] - INFO: 请求接口：登陆2
+2018-11-12 17:18:55,983 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:18:55,983 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:18:55,983 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:18:55,983 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:18:55,984 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:19:07,115 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:19:07,116 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:19:07,116 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:19:07,116 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:19:07,117 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:19:07,117 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:19:07,117 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:19:07,117 - requestSend.py[line:48] - INFO: 请求接口：登陆2
+2018-11-12 17:19:07,117 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:19:07,117 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:19:07,117 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:19:07,118 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:19:07,119 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:19:18,238 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:19:18,239 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:19:18,239 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:19:18,240 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:19:18,240 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:19:18,240 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:19:18,240 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:19:18,240 - requestSend.py[line:48] - INFO: 请求接口：登陆2
+2018-11-12 17:19:18,240 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:19:18,240 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:19:18,240 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:19:18,240 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:19:18,242 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:19:29,360 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:19:29,361 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:19:29,361 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:19:29,362 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:19:29,362 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:19:29,362 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:19:29,362 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:19:29,363 - requestSend.py[line:48] - INFO: 请求接口：登陆2
+2018-11-12 17:19:29,363 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:19:29,363 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:19:29,363 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:19:29,363 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:19:29,364 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:19:37,508 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:19:37,508 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:19:37,508 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:19:37,508 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:19:37,509 - requestSend.py[line:48] - INFO: 请求接口：登陆3
+2018-11-12 17:19:37,509 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:19:37,509 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:19:37,509 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:19:37,509 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:19:37,510 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:19:48,640 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:19:48,641 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:19:48,641 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:19:48,642 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:19:48,642 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:19:48,642 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:19:48,642 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:19:48,643 - requestSend.py[line:48] - INFO: 请求接口：登陆3
+2018-11-12 17:19:48,643 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:19:48,643 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:19:48,643 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:19:48,643 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:19:48,644 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:19:59,771 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:19:59,772 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:19:59,772 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:19:59,772 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:19:59,773 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:19:59,773 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:19:59,773 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:19:59,773 - requestSend.py[line:48] - INFO: 请求接口：登陆3
+2018-11-12 17:19:59,773 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:19:59,773 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:19:59,773 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:19:59,773 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:19:59,775 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:20:10,895 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:20:10,896 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:20:10,896 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:20:10,896 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:20:10,897 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:20:10,897 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:20:10,897 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:20:10,897 - requestSend.py[line:48] - INFO: 请求接口：登陆3
+2018-11-12 17:20:10,897 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:20:10,897 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:20:10,897 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:20:10,898 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:20:10,899 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:20:19,046 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:20:19,047 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:20:19,047 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:20:19,047 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:20:19,047 - requestSend.py[line:48] - INFO: 请求接口：登陆4
+2018-11-12 17:20:19,047 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:20:19,047 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:20:19,047 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:20:19,048 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:20:19,049 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:20:30,168 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:20:30,169 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:20:30,169 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:20:30,170 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:20:30,170 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:20:30,170 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:20:30,170 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:20:30,170 - requestSend.py[line:48] - INFO: 请求接口：登陆4
+2018-11-12 17:20:30,171 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:20:30,171 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:20:30,171 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:20:30,171 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:20:30,172 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:20:41,291 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:20:41,291 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:20:41,291 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:20:41,292 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:20:41,292 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:20:41,292 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:20:41,292 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:20:41,292 - requestSend.py[line:48] - INFO: 请求接口：登陆4
+2018-11-12 17:20:41,293 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:20:41,293 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:20:41,293 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:20:41,293 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:20:41,294 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:20:52,422 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:20:52,423 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:20:52,423 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:20:52,424 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:20:52,424 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:20:52,424 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:20:52,425 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:20:52,425 - requestSend.py[line:48] - INFO: 请求接口：登陆4
+2018-11-12 17:20:52,425 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:20:52,425 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:20:52,425 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:20:52,425 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:20:52,426 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:21:00,590 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:21:00,591 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:21:00,591 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:21:00,591 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:21:00,591 - requestSend.py[line:48] - INFO: 请求接口：登陆5
+2018-11-12 17:21:00,591 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:21:00,591 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:21:00,591 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:21:00,592 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:21:00,593 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:21:11,730 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:21:11,731 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:21:11,731 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:21:11,732 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:21:11,732 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:21:11,732 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:21:11,732 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:21:11,732 - requestSend.py[line:48] - INFO: 请求接口：登陆5
+2018-11-12 17:21:11,732 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:21:11,732 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:21:11,733 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:21:11,733 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:21:11,734 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:21:22,866 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:21:22,867 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:21:22,867 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:21:22,868 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:21:22,868 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:21:22,868 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:21:22,868 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:21:22,868 - requestSend.py[line:48] - INFO: 请求接口：登陆5
+2018-11-12 17:21:22,868 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:21:22,868 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:21:22,868 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:21:22,868 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:21:22,870 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:21:33,999 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:21:33,999 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:21:33,999 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:21:34,000 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:21:34,000 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:21:34,000 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:21:34,000 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:21:34,000 - requestSend.py[line:48] - INFO: 请求接口：登陆5
+2018-11-12 17:21:34,001 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:21:34,001 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:21:34,001 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:21:34,001 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:21:34,002 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:21:42,140 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:21:42,140 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:21:42,140 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:21:42,141 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:21:42,141 - requestSend.py[line:48] - INFO: 请求接口：登陆6
+2018-11-12 17:21:42,141 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:21:42,141 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:21:42,141 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:21:42,141 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:21:42,142 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:21:53,261 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:21:53,262 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:21:53,262 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:21:53,263 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:21:53,263 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:21:53,263 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:21:53,263 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:21:53,263 - requestSend.py[line:48] - INFO: 请求接口：登陆6
+2018-11-12 17:21:53,264 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:21:53,264 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:21:53,264 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:21:53,264 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:21:53,265 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:22:04,394 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:22:04,395 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:22:04,395 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:22:04,396 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:22:04,396 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:22:04,396 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:22:04,396 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:22:04,396 - requestSend.py[line:48] - INFO: 请求接口：登陆6
+2018-11-12 17:22:04,396 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:22:04,396 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:22:04,396 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:22:04,397 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:22:04,398 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:22:15,527 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:22:15,527 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:22:15,527 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '123', 'type': 'Web', 'version': '1.2.0', 'description': '这是一个描述', 'first_name': 'Tom'}
+2018-11-12 17:22:15,528 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:22:15,528 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:22:15,528 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:22:15,528 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:22:15,528 - requestSend.py[line:48] - INFO: 请求接口：登陆6
+2018-11-12 17:22:15,529 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:22:15,529 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:22:15,529 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:22:15,529 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:22:15,530 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:22:23,679 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:22:23,680 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:22:23,680 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'ICzyiFwVGe', 'description': 'LBXT1CYuZi'}
+2018-11-12 17:22:23,680 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:22:23,680 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:22:23,681 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:22:23,681 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:22:23,681 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:22:23,681 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:22:23,681 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:22:23,681 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:22:23,681 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:22:23,681 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:22:23,683 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:22:34,806 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:22:34,807 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:22:34,807 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'pJY10d9Vfa', 'description': 'kBN3VyjYIl'}
+2018-11-12 17:22:34,807 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:22:34,807 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:22:34,807 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:22:34,807 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:22:34,808 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:22:34,808 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:22:34,808 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:22:34,808 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:22:34,808 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:22:34,808 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:22:34,810 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:22:45,952 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:22:45,952 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:22:45,952 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'zg20QdEkUi', 'description': 'nPt3Vu7g8j'}
+2018-11-12 17:22:45,952 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:22:45,953 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:22:45,953 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:22:45,953 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:22:45,953 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:22:45,953 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:22:45,953 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:22:45,953 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:22:45,953 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:22:45,954 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:22:45,955 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:22:57,086 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:22:57,087 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:22:57,087 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'Vym4nJT97s', 'description': 'Yghzs6aAM7'}
+2018-11-12 17:22:57,087 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:22:57,087 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:22:57,087 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:22:57,087 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:22:57,088 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:22:57,088 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:22:57,088 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:22:57,088 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:22:57,088 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:22:57,088 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:22:57,090 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:23:05,225 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:23:05,226 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:23:05,226 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:23:05,226 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:23:05,226 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:23:05,226 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:23:05,226 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:23:05,226 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:23:05,226 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:23:05,227 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:23:05,228 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:23:16,369 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:23:16,370 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:23:16,370 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'KaG3fOAlQq', 'description': '0STKPE4Nob'}
+2018-11-12 17:23:16,370 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:23:16,370 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:23:16,370 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:23:16,370 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:23:16,371 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:23:16,371 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:23:16,371 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:23:16,371 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:23:16,371 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:23:16,371 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:23:16,373 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:23:27,495 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:23:27,496 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:23:27,496 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'zPAuv2YZdq', 'description': 'JLWVGqYsnR'}
+2018-11-12 17:23:27,497 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:23:27,497 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:23:27,497 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:23:27,497 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:23:27,497 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:23:27,497 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:23:27,497 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:23:27,497 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:23:27,497 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:23:27,498 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:23:27,499 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:23:38,642 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:23:38,643 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:23:38,643 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'NA8m2vZWHh', 'description': '14fZ9uWhHl'}
+2018-11-12 17:23:38,643 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:23:38,643 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:23:38,643 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:23:38,643 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:23:38,644 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:23:38,644 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:23:38,644 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:23:38,644 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:23:38,644 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:23:38,644 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:23:38,645 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:23:46,781 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:23:46,781 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:23:46,781 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:23:46,781 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:23:46,782 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:23:46,782 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:23:46,782 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:23:46,782 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:23:46,782 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:23:46,782 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:23:46,784 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:23:57,919 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:23:57,920 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:23:57,920 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'vrP1UG7f8T', 'description': 'eXwqaGWvrU'}
+2018-11-12 17:23:57,920 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:23:57,920 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:23:57,921 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:23:57,921 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:23:57,921 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:23:57,921 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:23:57,921 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:23:57,921 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:23:57,921 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:23:57,921 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:23:57,923 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:24:09,047 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:24:09,048 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:24:09,048 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'XmvrdJLnFf', 'description': 'wfriZd83Y5'}
+2018-11-12 17:24:09,049 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:24:09,049 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:24:09,049 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:24:09,049 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:24:09,049 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:24:09,049 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:24:09,049 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:24:09,049 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:24:09,050 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:24:09,050 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:24:09,051 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:24:20,183 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:24:20,184 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:24:20,184 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'Dt7hNXdpxv', 'description': '4mD91YiERT'}
+2018-11-12 17:24:20,184 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:24:20,184 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:24:20,184 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:24:20,184 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:24:20,185 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:24:20,185 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:24:20,185 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:24:20,185 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:24:20,185 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:24:20,185 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:24:20,187 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:24:28,333 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:24:28,333 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:24:28,333 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:24:28,333 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:24:28,334 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:24:28,334 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:24:28,334 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:24:28,334 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:24:28,334 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:24:28,334 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:24:28,335 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:24:39,456 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:24:39,457 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:24:39,457 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': '0vTYPLmqNy', 'description': 'W2OtBM1AGP'}
+2018-11-12 17:24:39,458 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:24:39,458 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:24:39,458 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:24:39,458 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:24:39,458 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:24:39,458 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:24:39,458 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:24:39,458 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:24:39,458 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:24:39,459 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:24:39,460 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:24:50,594 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:24:50,595 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:24:50,595 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': '4blBRjH5yi', 'description': 'OXLQtSCwcu'}
+2018-11-12 17:24:50,596 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:24:50,596 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:24:50,596 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:24:50,596 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:24:50,596 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:24:50,596 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:24:50,596 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:24:50,596 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:24:50,596 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:24:50,597 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:24:50,598 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:25:01,733 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:25:01,734 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:25:01,734 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'I6Kb0B9EO3', 'description': 'VHmLq3Eekh'}
+2018-11-12 17:25:01,734 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:25:01,734 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:25:01,734 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:25:01,734 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:25:01,735 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:25:01,735 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:25:01,735 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:25:01,735 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:25:01,735 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:25:01,735 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:25:01,737 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:25:09,883 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:25:09,883 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:25:09,883 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:25:09,883 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:25:09,883 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:25:09,884 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:25:09,884 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:25:09,884 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:25:09,884 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:25:09,884 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:25:09,885 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:25:21,020 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:25:21,021 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:25:21,021 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'JmUg5OwuKq', 'description': 'C3lXM7Es4U'}
+2018-11-12 17:25:21,021 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:25:21,021 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:25:21,021 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:25:21,021 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:25:21,022 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:25:21,022 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:25:21,022 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:25:21,022 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:25:21,022 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:25:21,022 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:25:21,024 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:25:32,145 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:25:32,146 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:25:32,146 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'SxhPqsc6HO', 'description': 'oF3pRUeMY7'}
+2018-11-12 17:25:32,146 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:25:32,146 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:25:32,146 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:25:32,146 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:25:32,147 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:25:32,147 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:25:32,147 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:25:32,147 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:25:32,147 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:25:32,147 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:25:32,148 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:25:43,282 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:25:43,283 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:25:43,283 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': 'r7BeQNoZVA', 'description': 'knaCjKOSDE'}
+2018-11-12 17:25:43,283 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:25:43,284 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:25:43,284 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:25:43,284 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:25:43,284 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:25:43,284 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:25:43,284 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:25:43,284 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:25:43,284 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:25:43,285 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:25:43,286 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:25:51,423 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:25:51,423 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:25:51,424 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:25:51,424 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:25:51,424 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:25:51,424 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:25:51,424 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:25:51,424 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:25:51,424 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:25:51,425 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:25:51,426 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:02,572 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:26:02,573 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:26:02,573 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '6', 'type': 'Web', 'version': 'DONmdTfwik', 'description': 'CFpLrn7dcT'}
+2018-11-12 17:26:02,573 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:26:02,574 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:02,574 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:26:02,574 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:26:02,574 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:26:02,574 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:26:02,574 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:26:02,574 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:26:02,574 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:26:02,575 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:02,576 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:13,716 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:26:13,717 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:26:13,717 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'pxaZVq5trb', 'description': 'lHtFbgZAGQ'}
+2018-11-12 17:26:13,717 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:26:13,718 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:13,718 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:26:13,718 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:26:13,718 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:26:13,718 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:26:13,718 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:26:13,718 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:26:13,718 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:26:13,719 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:13,720 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:24,844 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:26:24,844 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:26:24,844 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'gxVX3YbfzD', 'description': 'ZC60LcoAMp'}
+2018-11-12 17:26:24,845 - init.py[line:31] - INFO: 执行测试用例前置接口
+2018-11-12 17:26:24,845 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:24,845 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:26:24,845 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:26:24,845 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:26:24,845 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:26:24,845 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:26:24,845 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:26:24,845 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:26:24,846 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:24,847 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:32,999 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:26:33,000 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:26:33,000 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {}
+2018-11-12 17:26:33,000 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:33,001 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,001 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,001 - requestSend.py[line:45] - DEBUG: host处理结果：  10.4.100.209
+2018-11-12 17:26:33,001 - requestSend.py[line:48] - INFO: 请求接口：绑定小号
+2018-11-12 17:26:33,001 - requestSend.py[line:49] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/bindPhone
+2018-11-12 17:26:33,001 - requestSend.py[line:50] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,002 - requestSend.py[line:51] - INFO: 请求参数: {'orderBn': '2018118195340'}
+2018-11-12 17:26:33,002 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:33,003 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:33,030 - connectionpool.py[line:393] - DEBUG: http://127.0.0.1:8888 "POST http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/bindPhone HTTP/1.1" 200 84
+2018-11-12 17:26:33,030 - requestSend.py[line:115] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'phone': '17150194892'}, 'ts': 1531460245367})
+2018-11-12 17:26:33,030 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['phone']提取值
+2018-11-12 17:26:33,030 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'phone': '17150194892'}
+2018-11-12 17:26:33,039 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:33,040 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,040 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,040 - requestSend.py[line:45] - DEBUG: host处理结果：  10.4.100.209
+2018-11-12 17:26:33,040 - requestSend.py[line:48] - INFO: 请求接口：解绑小号
+2018-11-12 17:26:33,040 - requestSend.py[line:49] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/unbind
+2018-11-12 17:26:33,040 - requestSend.py[line:50] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,041 - requestSend.py[line:51] - INFO: 请求参数: {'orderBn': '2018118195340', 'phone': '17150194892', 'smallNumber': '', 'appId': '', 'token': ''}
+2018-11-12 17:26:33,041 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:33,042 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:33,064 - connectionpool.py[line:393] - DEBUG: http://127.0.0.1:8888 "POST http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/unbind HTTP/1.1" 200 76
+2018-11-12 17:26:33,065 - requestSend.py[line:115] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'result': True}, 'ts': 1531709137298})
+2018-11-12 17:26:33,072 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:33,072 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,072 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,072 - requestSend.py[line:45] - DEBUG: host处理结果：  10.4.100.209
+2018-11-12 17:26:33,073 - requestSend.py[line:48] - INFO: 请求接口：绑定小号
+2018-11-12 17:26:33,073 - requestSend.py[line:49] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/bindPhoneByMembersId
+2018-11-12 17:26:33,073 - requestSend.py[line:50] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,073 - requestSend.py[line:51] - INFO: 请求参数: {'memberId': '132', 'phone': 'Web', 'channelCode': '321', 'appId': '123', 'account': '', 'token': ''}
+2018-11-12 17:26:33,073 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:33,074 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:33,084 - connectionpool.py[line:393] - DEBUG: http://127.0.0.1:8888 "POST http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/bindPhoneByMembersId HTTP/1.1" 200 84
+2018-11-12 17:26:33,085 - requestSend.py[line:115] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'phone': '17150194892'}, 'ts': 1531460245367})
+2018-11-12 17:26:33,085 - GetRelevance.py[line:28] - DEBUG: 从返回结果中根据关联键['phone']提取值
+2018-11-12 17:26:33,085 - GetRelevance.py[line:68] - DEBUG: 提取后，关联键对象
+{'phone': ['17150194892', '17150194892']}
+2018-11-12 17:26:33,093 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:33,093 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,093 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,094 - requestSend.py[line:45] - DEBUG: host处理结果：  10.4.100.209
+2018-11-12 17:26:33,094 - requestSend.py[line:48] - INFO: 请求接口：解绑小号
+2018-11-12 17:26:33,094 - requestSend.py[line:49] - INFO: 请求地址：http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/unbind
+2018-11-12 17:26:33,094 - requestSend.py[line:50] - INFO: 请求头: {'Content-Type': 'application/json'}
+2018-11-12 17:26:33,094 - requestSend.py[line:51] - INFO: 请求参数: {'orderBn': '2018118195340', 'phone': '$phone$', 'smallNumber': '', 'appId': '', 'token': ''}
+2018-11-12 17:26:33,094 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:33,095 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:33,105 - connectionpool.py[line:393] - DEBUG: http://127.0.0.1:8888 "POST http://10.4.100.209/mock/13/api/newOrderLogisticsPhone/unbind HTTP/1.1" 200 76
+2018-11-12 17:26:33,106 - requestSend.py[line:115] - INFO: 接口请求结果：
+ (200, {'code': 0, 'codeMessage': 'success', 'data': {'result': True}, 'ts': 1531709137298})
+2018-11-12 17:26:33,116 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:26:33,116 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:26:33,116 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'vGut4CIxqY', 'description': 'ZL9RuJsf0y'}
+2018-11-12 17:26:33,117 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:33,117 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:26:33,117 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:26:33,117 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:26:33,117 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:26:33,118 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:26:33,118 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:26:33,118 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:26:33,118 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:33,119 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:44,243 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:26:44,244 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:26:44,244 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': 'Mzq1kmI4n3', 'description': 'DaTNjslkP2'}
+2018-11-12 17:26:44,244 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:44,244 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:26:44,244 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:26:44,245 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:26:44,245 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:26:44,245 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:26:44,245 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:26:44,245 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:26:44,245 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:44,246 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:26:55,392 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:26:55,393 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:26:55,393 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'a7lTSg4CiB', 'description': 'XufzK1iYV5'}
+2018-11-12 17:26:55,394 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:26:55,394 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:26:55,394 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:26:55,394 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:26:55,395 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:26:55,395 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:26:55,395 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:26:55,395 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:26:55,395 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:26:55,396 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:27:06,516 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:27:06,517 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:27:06,517 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'Q6zYPOnsch', 'description': 't4i93Qva16'}
+2018-11-12 17:27:06,518 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:27:06,518 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {}
+2018-11-12 17:27:06,518 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {}
+2018-11-12 17:27:06,518 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:27:06,519 - requestSend.py[line:48] - INFO: 请求接口：登陆1
+2018-11-12 17:27:06,519 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/user/login
+2018-11-12 17:27:06,519 - requestSend.py[line:50] - INFO: 请求头: {}
+2018-11-12 17:27:06,519 - requestSend.py[line:51] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-12 17:27:06,519 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:27:06,520 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:27:14,677 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:27:14,678 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:14,678 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:14,678 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:27:14,678 - requestSend.py[line:48] - INFO: 请求接口：添加项目
+2018-11-12 17:27:14,678 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/project/add_project
+2018-11-12 17:27:14,679 - requestSend.py[line:50] - INFO: 请求头: {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:14,679 - requestSend.py[line:51] - INFO: 请求参数: {'name': '5', 'type': 'Web', 'version': 'Q6zYPOnsch', 'description': 't4i93Qva16'}
+2018-11-12 17:27:14,679 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:27:14,680 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:27:25,802 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:27:25,803 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:27:25,803 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'nzkYXj6mZ1', 'description': 'YaQXMzmgDV'}
+2018-11-12 17:27:25,804 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:27:25,804 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:25,804 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:25,804 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:27:25,804 - requestSend.py[line:48] - INFO: 请求接口：添加项目
+2018-11-12 17:27:25,805 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/project/add_project
+2018-11-12 17:27:25,805 - requestSend.py[line:50] - INFO: 请求头: {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:25,805 - requestSend.py[line:51] - INFO: 请求参数: {'name': '5', 'type': 'Web', 'version': 'Q6zYPOnsch', 'description': 't4i93Qva16'}
+2018-11-12 17:27:25,805 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:27:25,806 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:27:36,939 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:27:36,940 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:27:36,940 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'BMJAYDq3wC', 'description': 'JZWLDkYyIn'}
+2018-11-12 17:27:36,941 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:27:36,941 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:36,941 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:36,941 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:27:36,942 - requestSend.py[line:48] - INFO: 请求接口：添加项目
+2018-11-12 17:27:36,942 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/project/add_project
+2018-11-12 17:27:36,942 - requestSend.py[line:50] - INFO: 请求头: {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:36,942 - requestSend.py[line:51] - INFO: 请求参数: {'name': '5', 'type': 'Web', 'version': 'Q6zYPOnsch', 'description': 't4i93Qva16'}
+2018-11-12 17:27:36,942 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:27:36,943 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888
+2018-11-12 17:27:48,076 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-12 17:27:48,077 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-12 17:27:48,077 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 's9ieB8gtSh', 'description': '583YmZHgTC'}
+2018-11-12 17:27:48,078 - requestSend.py[line:30] - INFO: ====================================================================================================
+2018-11-12 17:27:48,078 - requestSend.py[line:32] - DEBUG: 请求头处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:48,078 - requestSend.py[line:34] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:48,079 - requestSend.py[line:45] - DEBUG: host处理结果：  120.79.232.29
+2018-11-12 17:27:48,079 - requestSend.py[line:48] - INFO: 请求接口：添加项目
+2018-11-12 17:27:48,079 - requestSend.py[line:49] - INFO: 请求地址：http://120.79.232.29/api/project/add_project
+2018-11-12 17:27:48,079 - requestSend.py[line:50] - INFO: 请求头: {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-12 17:27:48,079 - requestSend.py[line:51] - INFO: 请求参数: {'name': '5', 'type': 'Web', 'version': 'Q6zYPOnsch', 'description': 't4i93Qva16'}
+2018-11-12 17:27:48,079 - requestSend.py[line:69] - INFO: POST请求接口
+2018-11-12 17:27:48,081 - connectionpool.py[line:205] - DEBUG: Starting new HTTP connection (1): 127.0.0.1:8888

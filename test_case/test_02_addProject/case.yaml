@@ -46,7 +46,7 @@ test_case:
             expected_request:
             CustomFail:                           # 自定义失败说明
       relevance:
-          - code # 关联键
+          - 王八大 # 关联键
 
     - test_name: 添加项目1
       info: 添加项目1
@@ -59,7 +59,7 @@ test_case:
       timeout: 8
       parameter:
             name: $RandomString(10)$ $RandomString(10)$
-            type: Web
+            type: $Choice(Web,App)list$
             version: $RandomInt(10,100)$ $RandomString(10)$
             description: $RandomFloat(10,100,5)$ $RandomString(10)$
       file: false
@@ -160,10 +160,10 @@ test_case:
       check:
             check_type: datebase_check # 数据库校验
             datebase:
-                  NAME: api_test
-                  USER: root
-                  PASSWORD: lt19910301
-                  PORT: 3306
+                  name: api_test
+                  user: root
+                  password: lt19910301
+                  port: 3306
                   sql: select * form api_test
             expected_code: 200
             expected_request:

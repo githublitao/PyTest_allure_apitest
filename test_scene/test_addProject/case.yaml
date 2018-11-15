@@ -23,13 +23,13 @@ test_case:
             password: lt19910301
       file: false                 # 是否上传文件，默认false，若上传文件接口，此处为文件相对路径 bool or string
       check:             # 校验列表  list or dict
-          - check_type: no_check # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
+          - check_type: Regular_check # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
             datebase:
-            expected_code:
-            expected_request:
+            expected_code: 200
+            expected_request: 王八蛋
             CustomFail:                           # 自定义失败说明
       relevance:  # 关联的键 list or string
-              - key
+              - 王八蛋
       # 第一条case，info可不填
     - test_name: 添加项目        # 必填，parameter为文件路径时
       info: 添加项目

@@ -67,3 +67,11 @@ def get_relevance(data, relevance_list, relevance):
                 relevance[relevance_list] = relevance_value
     logging.debug("提取后，关联键对象\n%s" % relevance)
     return relevance
+
+
+if __name__ == "__main__":
+    _data = {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}}
+    _relevance = {'name': '10', 'type': 'Web', 'version': 'KHQdpM8gAL', 'description': 'avp7tZOyiY'}
+    _relevance_list = ['key']
+    print(get_relevance(_data, _relevance, _relevance_list))
+

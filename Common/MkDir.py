@@ -35,3 +35,6 @@ def mk_dir(path):
         # 如果目录存在则不创建，并提示目录已存在
         pass
 
+
+if __name__ == "__main__":
+    mk_dir("./log")

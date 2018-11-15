@@ -1,0 +1,77 @@
+2018-11-13 15:29:16,040 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 15:29:16,041 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 15:29:16,041 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'qOar0xN72M', 'description': '1C0X2OgBzP'}
+2018-11-13 15:29:16,042 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-13 15:29:16,043 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-13 15:29:16,043 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-13 15:29:16,043 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-13 15:29:16,043 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-13 15:29:16,043 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-13 15:29:16,043 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-13 15:29:16,044 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-13 15:29:16,044 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-13 15:29:16,048 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 127.0.0.1
+2018-11-13 15:29:16,192 - connectionpool.py[line:396] - DEBUG: http://127.0.0.1:8888 "POST http://120.79.232.23/api/user/login HTTP/1.1" 200 235
+2018-11-13 15:29:16,193 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-13 15:29:19,306 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 15:29:19,307 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 15:29:19,307 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'RiLZBP7paG', 'description': 'UDuA6xQpYj'}
+2018-11-13 15:29:19,308 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-13 15:29:19,308 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-13 15:29:19,308 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-13 15:29:19,308 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-13 15:29:19,308 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-13 15:29:19,308 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-13 15:29:19,308 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-13 15:29:19,309 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-13 15:29:19,309 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-13 15:29:19,310 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 127.0.0.1
+2018-11-13 15:29:19,447 - connectionpool.py[line:396] - DEBUG: http://127.0.0.1:8888 "POST http://120.79.232.23/api/user/login HTTP/1.1" 200 235
+2018-11-13 15:29:19,448 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-13 15:29:22,459 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 15:29:22,460 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 15:29:22,460 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '10', 'type': 'Web', 'version': 'IQigSYN5Pk', 'description': 'xAreIjRgtG'}
+2018-11-13 15:29:22,461 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-13 15:29:22,461 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-13 15:29:22,461 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-13 15:29:22,461 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-13 15:29:22,461 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-13 15:29:22,461 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-13 15:29:22,461 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-13 15:29:22,461 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-13 15:29:22,462 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-13 15:29:22,463 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 127.0.0.1
+2018-11-13 15:29:22,618 - connectionpool.py[line:396] - DEBUG: http://127.0.0.1:8888 "POST http://120.79.232.23/api/user/login HTTP/1.1" 200 235
+2018-11-13 15:29:22,619 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-13 15:29:25,629 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 15:29:25,630 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 15:29:25,630 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'rA5eQcBlOR', 'description': 'pzxS3fJNWR'}
+2018-11-13 15:29:25,631 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-13 15:29:25,631 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {}
+2018-11-13 15:29:25,631 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {}
+2018-11-13 15:29:25,632 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-13 15:29:25,632 - requestSend.py[line:50] - INFO: 请求接口：登陆1
+2018-11-13 15:29:25,632 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/user/login
+2018-11-13 15:29:25,632 - requestSend.py[line:52] - INFO: 请求头: {}
+2018-11-13 15:29:25,632 - requestSend.py[line:53] - INFO: 请求参数: {'username': 'litao', 'password': 'lt19910301'}
+2018-11-13 15:29:25,632 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-13 15:29:25,633 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 127.0.0.1
+2018-11-13 15:29:25,784 - connectionpool.py[line:396] - DEBUG: http://127.0.0.1:8888 "POST http://120.79.232.23/api/user/login HTTP/1.1" 200 235
+2018-11-13 15:29:25,784 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (200, {'code': '999999', 'msg': '成功', 'data': {'first_name': 'Tom', 'last_name': '', 'phone': '123456789', 'email': '123@qq.com', 'key': 'e1dfbfd759ad46bcdc44df989ade3f1c190cc936', 'date_joined': '2018-06-28 02:54:00', 'userphoto': '/file/userphoto.jpg'}})
+2018-11-13 15:29:25,797 - requestSend.py[line:31] - INFO: ====================================================================================================
+2018-11-13 15:29:25,797 - requestSend.py[line:33] - DEBUG: 请求头处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-13 15:29:25,797 - requestSend.py[line:35] - DEBUG: 请求参数处理结果：  {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-13 15:29:25,798 - requestSend.py[line:47] - DEBUG: host处理结果：  120.79.232.23
+2018-11-13 15:29:25,798 - requestSend.py[line:50] - INFO: 请求接口：添加项目
+2018-11-13 15:29:25,798 - requestSend.py[line:51] - INFO: 请求地址：http://120.79.232.23/api/project/add_project
+2018-11-13 15:29:25,798 - requestSend.py[line:52] - INFO: 请求头: {'Authorization': 'Token ${key}$', 'Content-Type': 'application/json'}
+2018-11-13 15:29:25,798 - requestSend.py[line:53] - INFO: 请求参数: {'name': '5', 'type': 'Web', 'version': 'rA5eQcBlOR', 'description': 'pzxS3fJNWR'}
+2018-11-13 15:29:25,798 - requestSend.py[line:71] - INFO: POST请求接口
+2018-11-13 15:29:25,799 - connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): 127.0.0.1
+2018-11-13 15:29:25,845 - connectionpool.py[line:396] - DEBUG: http://127.0.0.1:8888 "POST http://120.79.232.23/api/project/add_project HTTP/1.1" 401 42
+2018-11-13 15:29:25,846 - requestSend.py[line:117] - INFO: 接口请求结果：
+ (401, {'code': 401, 'msg': '认证令牌无效。'})

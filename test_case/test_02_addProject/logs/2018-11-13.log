@@ -1,0 +1,57 @@
+2018-11-13 17:43:53,856 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:43:53,857 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:43:53,857 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'PpnM9mCsBN', 'description': 'hdvXz0UPnK'}
+2018-11-13 17:43:56,863 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:43:56,864 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:43:56,864 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '4', 'type': 'Web', 'version': 'zVQ02XlAKW', 'description': 'gIh315WO4B'}
+2018-11-13 17:43:59,867 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:43:59,867 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:43:59,867 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'cYF3jOQ418', 'description': 'WEudAimPpw'}
+2018-11-13 17:44:02,870 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:02,871 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:02,871 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'REL6Fc5fta', 'description': 'rn53DRQLMd'}
+2018-11-13 17:44:05,877 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:05,878 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:05,878 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'wcWVMYeK6a', 'description': 'yPiSsCuWea'}
+2018-11-13 17:44:08,880 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:08,881 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:08,881 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'okytVwFgir', 'description': 'ZYPa4lLN5f'}
+2018-11-13 17:44:11,884 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:11,885 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:11,885 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': 'nRdbX95WgI', 'description': 'Pr1vsMUuGg'}
+2018-11-13 17:44:14,890 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:14,891 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:14,891 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'rZjY1soOkb', 'description': 'SXcmBpbynY'}
+2018-11-13 17:44:17,894 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:17,894 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:17,894 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'gqGjYODyEl', 'description': 'og3HvjOxlr'}
+2018-11-13 17:44:20,897 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:20,898 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:20,898 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': 'MAsWGV4Fik', 'description': 'e6ADChLGPz'}
+2018-11-13 17:44:23,903 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:23,904 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:23,904 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'rMpJqRwztE', 'description': 'xy8zs4ruFH'}
+2018-11-13 17:44:26,907 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:26,908 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:26,908 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '7', 'type': 'Web', 'version': 'COJwcxfh5Z', 'description': 'yUW2a8wDLM'}
+2018-11-13 17:44:29,910 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:29,911 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:29,911 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '5', 'type': 'Web', 'version': 'KW9catgY7U', 'description': 'T8B9XdNWFS'}
+2018-11-13 17:44:32,916 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:32,917 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:32,917 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '8', 'type': 'Web', 'version': 'UYKOdSNCH7', 'description': 'vlZ9z82cDW'}
+2018-11-13 17:44:35,919 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:35,920 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:35,920 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '0', 'type': 'Web', 'version': '2JW6G4SzXR', 'description': 'vUm0FBOnYZ'}
+2018-11-13 17:44:38,923 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:38,924 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:38,924 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '1', 'type': 'Web', 'version': 'gWnqGN67vp', 'description': 'ULXjEPdBvI'}
+2018-11-13 17:44:41,929 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:41,929 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:41,929 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '9', 'type': 'Web', 'version': 'WnQvwDpf0l', 'description': 'PVwreuDNRg'}
+2018-11-13 17:44:44,932 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:44,933 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:44,933 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '2', 'type': 'Web', 'version': 'Xs7J0AEmi9', 'description': '3mBt4MnJbR'}
+2018-11-13 17:44:47,935 - ConfRelevance.py[line:22] - INFO: 初始化关联文件
+2018-11-13 17:44:47,936 - ConfRelevance.py[line:29] - DEBUG: 读取初始关联文件内容：   ItemsView(<Section: relevance>)
+2018-11-13 17:44:47,936 - ConfRelevance.py[line:32] - DEBUG: 初始关联内容数据处理后：   {'name': '3', 'type': 'Web', 'version': 'VMuQFWlwiY', 'description': '7p9IYvU6ui'}

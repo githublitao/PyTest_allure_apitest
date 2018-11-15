@@ -22,3 +22,7 @@ def ini_relevance(_path):
     rel = ConfRelevance.ConfRelevance(_path + "/relevance.ini")
     relevance = rel.get_relevance_conf()
     return relevance
+
+
+if __name__ == "__main__":
+    print(ini_relevance('D:\\project\\PyTest_allure_apitest\\test_case\\test_01_login'))

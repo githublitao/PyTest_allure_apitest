@@ -18,9 +18,7 @@ from main import failureException
 def random_float(data):
     """
     获取随机整型数据
-    :param start_num: 开始数字
-    :param end_num: 结束数字
-    :param accuracy: 精确度
+    :param data:
     :return:
     """
     try:

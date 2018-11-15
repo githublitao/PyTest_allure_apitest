@@ -23,10 +23,11 @@ class TestLogin:
     @classmethod
     def setup_class(cls):
         cls.rel = ini_relevance(PATH)
+        cls.result = {"result": True}
 
     def setup(self):
         self.relevance = self.rel.copy()
-        self.relevance = init.ini_request(case_dict, self.relevance, PATH)
+        self.relevance = init.ini_request(case_dict, self.relevance, PATH, self.result)
 
     # @pytest.mark.skipif(fa)  # 跳过条件
     @pytest.mark.parametrize("case_data", case_dict["test_case"])
@@ -40,8 +41,7 @@ class TestLogin:
         :param case_data: 参数化用例的形参
         :return:
         """
-        global relevance
-        # 参数化修改test_login 注释
+        # 参数化修改test_add_project 注释
         for k, v in enumerate(case_dict["test_case"]):  # 遍历用例文件中所有用例的索引和值
             try:
                 if case_data == v:
@@ -49,7 +49,8 @@ class TestLogin:
                     TestLogin.test_login.__doc__ = case_dict["test_case"][k+1]["info"]
             except IndexError:
                 pass
-        api_send_check(case_data, case_dict, self.relevance, self.rel, PATH)
+        # 发送测试请求
+        api_send_check(case_data, case_dict,  self.relevance, self.rel,  PATH, self.result)
 
 
 if __name__ == "__main__":

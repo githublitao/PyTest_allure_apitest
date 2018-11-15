@@ -87,10 +87,10 @@ def manage(param, relevance):
                     pass
         except TypeError:
             pass
-        try:
-            param = function_replace(param)
-        except TypeError:
-            pass
+        # try:
+        #     param = function_replace(param)
+        # except TypeError:
+        #     pass
     return param
 
 

@@ -50,4 +50,5 @@ def get_time(time_type, layout, unit="0,0,0,0,0"):
 
 if __name__ == "__main__":
     print(get_time("else_time", "%Y-%m-%d %H:%M:%S", "5,5,5,5,5"))
+    print(get_time("now", "%Y-%m-%d %H:%M:%S", "5,5,5,5,5"))
 

@@ -18,13 +18,14 @@ from Common.ParamManage import manage
 from main import failureException
 
 
-def read_param(test_name, param, relevance, _path):
+def read_param(test_name, param, relevance, _path, result):
     """
     判断用例中参数类型
     :param test_name: 用例名称
     :param param:
     :param relevance: 关联对象
     :param _path: case路径
+    :param result: 全局结果
     :return:
     """
     # 用例中参数为json格式
@@ -42,11 +43,23 @@ def read_param(test_name, param, relevance, _path):
                         break
                 # 为空，未匹配到
                 if not isinstance(param, dict):
+                    result["result"] = False
                     raise failureException("未找到用例关联的参数\n文件路径： %s\n索引： %s" % (param, test_name))
                 else:
                     param = manage(param, relevance)
         except FileNotFoundError:
+            result["result"] = False
             raise failureException("用例关联文件不存在\n文件路径： %s" % param)
         except JSONDecodeError:
+            result["result"] = False
             raise failureException("用例关联的参数文件有误\n文件路径： %s" % param)
     return param
+
+
+if __name__ == "__main__":
+    path = 'D:\\project\\PyTest_allure_apitest\\test_case\\test_02_addProject'
+    _param = {}
+    _relevance = {'name': '6', 'type': 'Web', 'version': 'gmRu40IPsY', 'description': 'he6xNHtSIO'}
+    _result = {'result': True}
+    _test_name = '登陆1'
+    print(read_param(_test_name, _param, _relevance, path, _result))

@@ -28,3 +28,9 @@ def custom_manage(custom_fail, relevance):
         pass
     return custom_fail
 
+
+if __name__ == "__main__":
+    _custom_fail = "这是一段${test}$用的数据"
+    _relevance = {"test": "测试"}
+    print(custom_manage(_custom_fail, _relevance))
+
