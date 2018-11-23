@@ -1,0 +1,25 @@
+[
+  {
+    "test_name": "添加项目",
+    "json": {
+      "name": "$MD5{123456}MD5$",
+      "type": "${type}$",
+      "version": "${version}$",
+      "description": "${description}$"
+    }
+  },
+  {
+    "test_name": "登陆4",
+    "json": {
+      "code": "999999",
+      "msg": "成功"
+    }
+  },
+  {
+    "test_name": "登陆2",
+    "json": {
+      "code": "999999",
+      "msg": "成功"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+requests==2.18.4
+PyMySQL==0.8.1
+pytest==3.9.3
+pytest-forked==0.2
+simplejson==3.16.0
+pytest_allure_adaptor==1.7.10
+PyYAML==3.13
+pytest-rerunfailures==5.0
+pytest-xdist==1.24.1
+

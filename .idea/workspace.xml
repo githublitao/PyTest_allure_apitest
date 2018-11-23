@@ -2,109 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca07ecbc-e497-40f1-851f-4fb8edb022a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PyTest_allure_apitest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DatabaseConfig/MySQLIni.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DatabaseConfig/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exception/CustomException.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestScene/test_addProject/logs/2018-11-21.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/CheckResult.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/CheckResult.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/FunctionReplace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/FunctionReplace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/GetRelevance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/GetRelevance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/HostManage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/HostManage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/ParamManage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/ParamManage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/ReadParam.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/TestAndCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/TestAndCheck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/expectedManage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/ExpectedManage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/requestSend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/requestSend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomData/GetTime.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomData/GetTime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomData/RandomInt.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomData/RandomInt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exception/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/logs/2018-11-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/logs/2018-11-13_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestScene/test_addProject/logs/2018-11-21_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/logs/2018-11-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/logs/2018-11-15_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestAddProject/test_AddProject.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/logs/2018-11-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/logs/2018-11-13_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/logs/2018-11-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/logs/2018-11-15_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestLogin/test_login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestSmallNumberBindUnbind/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestSmallNumberBindUnbind/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestSmallNumberBindUnbind/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestSmallNumberBindUnbind/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestSmallNumberBindUnbind/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/TestSmallNumberBindUnbind/test_smalNumber.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/Test_Refund/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/Test_Refund/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/Test_Refund/expected.json" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseConfig/TestDatabases.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/Test_Refund/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/Test_Refund/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/Test_Refund/test_Refundt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_IdBinding/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_IdBinding/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_IdBinding/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_IdBinding/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_IdBinding/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_IdBinding/test_IdBinding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ModifySend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ModifySend/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ModifySend/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ModifySend/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ModifySend/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ModifySend/test_ModifySend.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_OrderUnbinding/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_OrderUnbinding/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_OrderUnbinding/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_OrderUnbinding/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_OrderUnbinding/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_OrderUnbinding/test_OrderUnbinding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ReturnGoods/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ReturnGoods/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ReturnGoods/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ReturnGoods/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ReturnGoods/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ReturnGoods/test_ReturnGoods.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ZhongTaiCancel/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ZhongTaiCancel/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ZhongTaiCancel/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ZhongTaiCancel/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ZhongTaiCancel/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_ZhongTaiCancel/test_ZhongTaiCancel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_addProject/case.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/TestScene/test_addProject/case.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_addProject/param.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestScene/test_addProject/param.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_addProject/test_AddProjectscene.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestScene/test_addProject/test_AddProjectscene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_cancel/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_cancel/case.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_cancel/expected.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_cancel/param.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_cancel/relevance.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestScene/test_cancel/test_cancel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/configHost.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/configHost.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/host.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/host.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-11-12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-11-12_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-11-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-11-13_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-11-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-11-15_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,15 +19,15 @@
     <session id="951448838">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="6" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="7" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ini" value="5" />
-          <entry key="json" value="4" />
+          <entry key="json" value="5" />
           <entry key="log" value="2" />
           <entry key="py" value="22" />
           <entry key="yaml" value="4" />
@@ -138,7 +36,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="5" />
-          <entry key="JSON" value="4" />
+          <entry key="JSON" value="5" />
           <entry key="Log" value="2" />
           <entry key="Python" value="22" />
           <entry key="YAML" value="4" />
@@ -149,15 +47,17 @@
           <entry key="ini" value="3" />
           <entry key="json" value="28" />
           <entry key="py" value="32" />
-          <entry key="yaml" value="195" />
+          <entry key="txt" value="10" />
+          <entry key="yaml" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="3" />
           <entry key="JSON" value="28" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Python" value="32" />
-          <entry key="YAML" value="195" />
+          <entry key="YAML" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -169,20 +69,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/case.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2558">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="20">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/init.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/expected.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="40">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -195,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestScene/test_addProject/test_AddProjectscene.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
+            <state relative-caret-position="900">
               <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
             </state>
           </provider>
@@ -213,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="900">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
@@ -231,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/test_AddProject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="820">
               <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
             </state>
           </provider>
@@ -299,6 +199,17 @@
             <path>
               <item name="PyTest_allure_apitest" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTest_allure_apitest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyTest_allure_apitest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTest_allure_apitest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyTest_allure_apitest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTest_allure_apitest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAddProject" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -413,6 +324,14 @@
       <option name="presentableId" value="Default" />
       <updated>1542793018986</updated>
     </task>
+    <task id="LOCAL-00001" summary="不说">
+      <created>1542963844498</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542963844498</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -425,13 +344,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23081024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23347548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3705693" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3705693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -454,6 +374,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="不说" />
+    <option name="LAST_COMMIT_MESSAGE" value="不说" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DatabaseConfig/TestDatabases.ini">
@@ -488,13 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/expected.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/param.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -509,9 +426,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/case.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Common/init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="600">
           <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
         </state>
       </provider>
@@ -519,19 +443,37 @@
     <entry file="file://$PROJECT_DIR$/config/configHost.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseConfig/MySQLIni.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/TestScene/test_addProject/test_AddProjectscene.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="900">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestScene/test_addProject/case.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/test_AddProject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="820">
           <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
         </state>
       </provider>
@@ -543,31 +485,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestScene/test_addProject/test_AddProjectscene.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/DatabaseConfig/MySQLIni.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestScene/test_addProject/case.yaml">
+    <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/expected.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/TestAddProject/case.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2558">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="40">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
