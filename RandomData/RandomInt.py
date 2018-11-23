@@ -34,4 +34,4 @@ def random_int(scope):
 
 
 if __name__ == "__main__":
-    print(random_int("200,100"))
+    print(random_int("100,100"))

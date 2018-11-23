@@ -1,6 +1,7 @@
 # 用例基本信息
 testinfo:
       id: test_addProject            # 用例ID， 用于识别     string
+      moudle: 项目管理
       title: 添加项目流程                 # 用例标题，在报告中作为一级目录显示  必填 string
       host: ${test_platform}$          # 请求的域名，可写死，也可写成模板关联host配置文件  选填（此处不填，每条用例必填） string
       address: /api/project/add_project # 请求地址 选填（此处不填，每条用例必填） string
@@ -25,11 +26,12 @@ test_case:
       check:             # 校验列表  list or dict
           - check_type: Regular_check # 校验类型 string   不校验时 datebase， expected_code, expected_request 均可不填
             datebase:
-            expected_code: 200
-            expected_request: 王八蛋
+            expected_code: 400
+            expected_request: key
             CustomFail:                           # 自定义失败说明
       relevance:  # 关联的键 list or string
-              - 王八蛋
+            key: $.data.key
+
       # 第一条case，info可不填
     - test_name: 添加项目        # 必填，parameter为文件路径时
       info: 添加项目
@@ -37,7 +39,7 @@ test_case:
       request_type: post      # 请求类型
       parameter_type: raw     # 参数类型
       headers:                # 请求头
-            Authorization: Token ${key}$
+            Authorization: Token ${key.0}$
             Content-Type: application/json
       timeout: 8
       parameter:

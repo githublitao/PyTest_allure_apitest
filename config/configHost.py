@@ -17,17 +17,17 @@ PATH = os.path.split(os.path.realpath(__file__))[0]
 
 class ConfHost:
     # host文件读取配置
-    def __init__(self):
+    def __init__(self, run_env):
         config = configparser.ConfigParser()
         config.read(PATH+"/host.ini", encoding="utf-8")
-        self.host = config["host"]
+        self.host = config[run_env]
 
     def get_host_conf(self):
         return self.host
 
 
 if __name__ == "__main__":
-    host = ConfHost()
+    host = ConfHost("TestHost")
     for k, v in host.get_host_conf():
         print(k, v)
 

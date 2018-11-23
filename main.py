@@ -17,7 +17,7 @@ failureException = AssertionError
 
 if __name__ == '__main__':
     LogConfig(PATH)
-    pytest.main("%s --alluredir report" % case_path)
-    # pytest.main()
+    pytest.main("--RunEnv=TestHost --DatabaseEnv=TestDatabases %s --alluredir report" % case_path)
+    # pytest.main("%s --alluredir report" % case_path)
     os.popen("allure generate report/ -o result/ --clean")
     os.popen("allure open -h 0.0.0.0 -p 8083 result/")

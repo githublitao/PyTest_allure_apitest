@@ -76,8 +76,13 @@ if __name__ == '__main__':
     time_num = '$GetTime(time_type=now,layout=13timestamp,unit=5,5,5,5,5)$'
     choice_num = '$RandomInt($Choice($Choice(' + int_num + ',' + int_num + ',' + int_num + ',' + int_num + \
                  ')list$)list$,$Choice($Choice(' + int_num + ',' + int_num + ',' + int_num + ',' + int_num + ')list$)list$)$'
-    print(function_replace(int_num))
-    print(function_replace(string_num))
-    print(function_replace(time_num))
-    print(function_replace(float_num))
-    print(function_replace(choice_num))
+    test = "$RandomString($RandomInt(10,20)$)$ 拼接 $RandomString($RandomInt(10,20)$)$"
+
+    test1 = "$MD5($RandomString($RandomInt(10,20)$)$&$RandomString($RandomInt(10,20)$)$)MD5$"
+    print(function_replace(test))
+    print(function_replace(test1))
+    # print(function_replace(int_num))
+    # print(function_replace(string_num))
+    # print(function_replace(time_num))
+    # print(function_replace(float_num))
+    # print(function_replace(choice_num))

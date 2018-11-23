@@ -16,10 +16,11 @@ import re
 from config.configHost import ConfHost
 
 
-def host_manage(host):
+def host_manage(host, run_env):
     """
     host关联配置
     :param host:
+    :param run_env:
     :return:
     """
     try:
@@ -27,7 +28,7 @@ def host_manage(host):
         for n in relevance_list:  # 遍历关联key
             pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
             # 初始化host配置
-            host_config = ConfHost()
+            host_config = ConfHost(run_env)
             host_relevance = host_config.get_host_conf()  # 获取配置里面所有host
             host = re.sub(pattern, host_relevance[n], host, count=1)  # 替换host 1次
     except TypeError:

@@ -14,11 +14,13 @@ import re
 
 import allure
 
-from Common import CheckJson, expectedManage, CustomFail
+from Common import CheckJson, ExpectedManage, CustomFail, ParamManage
+from DatabaseConfig import MySQLIni
+from Exception.CustomException import CaseDatabaseConfigError
 from main import failureException
 
 
-def check(test_name, case_data, code, data, relevance, _path, success):
+def check(test_name, case_data, code, data, relevance, _path, success, database_env):
     """
     校验测试结果
     :param test_name:  测试用例
@@ -28,6 +30,7 @@ def check(test_name, case_data, code, data, relevance, _path, success):
     :param relevance:  关联值对象
     :param _path:  case路径
     :param success:  全局测试结果
+    :param database_env:  数据库环境
     :return:
     """
     # 不校验
@@ -40,7 +43,7 @@ def check(test_name, case_data, code, data, relevance, _path, success):
         expected_request = case_data["expected_request"]
         # 判断预期结果格式，如果是字符串，则打开文件路径，提取保存在文件中的期望结果
         if isinstance(case_data["expected_request"], str):
-                expected_request = expectedManage.read_json(test_name, expected_request, relevance, _path, success)
+                expected_request = ExpectedManage.read_json(test_name, expected_request, relevance, _path, success)
         with allure.step("JSON格式校验"):
             allure.attach("期望code", str(case_data["expected_code"]))
             allure.attach('期望data', str(expected_request))
@@ -79,7 +82,7 @@ def check(test_name, case_data, code, data, relevance, _path, success):
         expected_request = case_data["expected_request"]
         # 判断预期结果格式，如果是字符串，则打开文件路径，提取保存在文件中的期望结果
         if isinstance(case_data["expected_request"], str):
-            expected_request = expectedManage.read_json(test_name, expected_request, relevance, _path, success)
+            expected_request = ExpectedManage.read_json(test_name, expected_request, relevance, _path, success)
         with allure.step("完全校验"):
             allure.attach("期望code", str(case_data["expected_code"]))
             allure.attach('期望data', str(expected_request))
@@ -137,8 +140,23 @@ def check(test_name, case_data, code, data, relevance, _path, success):
             raise failureException("http状态码错误！\n %s != %s" % (code, case_data["expected_code"]))
 
     # 数据库校验
-    elif case_data["check_type"] == "datebase_check":
-        pass
+    elif case_data["check_type"] == "database_check":
+        sql = case_data["database"].get("sql")
+        db_name = case_data["database"].get("name")
+        count = case_data["database"].get("count", 1)
+        if all([db_name, sql, isinstance(count, int)]):
+            sql = ParamManage.manage(sql, relevance)
+            db = MySQLIni.MySQLConfig(database_env, db_name)
+            count = int(count)
+            num = db.select_sql(sql)
+            if count == num:
+                pass
+            else:
+                success["result"] = False
+                raise failureException("数据库： {0}\nSQL： {1}\n未查找到内容".
+                                       format(case_data["database"].get("name"), case_data["database"].get("sql")))
+        else:
+            raise CaseDatabaseConfigError(case_data["database"])
     else:
         success["result"] = False
         raise failureException("无该校验方式%s" % case_data["check_type"])

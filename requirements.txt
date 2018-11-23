@@ -1,7 +1,0 @@
-simplejson==3.16.0
-requests==2.20.0
-pytest==3.9.3
-pytest_allure_adaptor==1.7.10
-PyYAML==3.13
-configparser==3.5.0
-pytest-rerunfailures==5.0

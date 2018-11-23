@@ -13,7 +13,10 @@
 
 import re
 
+import jsonpath
+
 from Common.FunctionReplace import function_replace
+from Exception.CustomException import RelevanceIndexError, RelevanceIndexNotInt, RelevanceValueError
 
 
 def manage(param, relevance):
@@ -33,24 +36,23 @@ def manage(param, relevance):
             else:  # 字符串类型
                 try:
                     relevance_list = re.findall("\${(.*?)}\$", value)   # 查找字符串中所有$key$ 作为关联对象
-                    relevance_index = 0  # 初始化列表索引
                     for n in relevance_list:  # 遍历关联key
                         pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
+                        n_list = n.split(".")
                         n = n.lower()
                         try:
-                            if isinstance(relevance[n], list):   # 判断是关联key是否是个list
-                                try:
-                                    # 替换第一个匹配到的关联
-                                    param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
-                                    relevance_index += 1
-                                except IndexError:
-                                    # 关联值使用完后，初始化索引为0，重新匹配
-                                    relevance_index = 0
-                                    param[key] = re.sub(pattern, relevance[n][relevance_index], param[key], count=1)
-                                    relevance_index += 1
+                            if len(n_list) == 1:
+                                param[key] = re.sub(pattern, str(relevance[n]), param[key])
+                            elif len(n_list) == 2:
+                                if n_list[1].isdigit():
+                                    try:
+                                        param[key] = re.sub(pattern, str(relevance[n_list[0]][int(n_list[1])]), param[key])
+                                    except IndexError:
+                                        raise RelevanceIndexError(relevance[n], n)
+                                else:
+                                    raise RelevanceIndexNotInt(n)
                             else:
-                                # 关联key是字符串，直接替换
-                                param[key] = re.sub(pattern, relevance[n], param[key], count=1)
+                                raise RelevanceValueError(n)
                         except KeyError:
                             pass
                 except TypeError:
@@ -66,63 +68,38 @@ def manage(param, relevance):
     else:  # 字符串类型
         try:
             relevance_list = re.findall("\${(.*?)}\$", param)  # 查找字符串中所有$key$ 作为关联对象
-            relevance_index = 0  # 初始化列表索引
             for n in relevance_list:  # 遍历关联key
                 pattern = re.compile('\${' + n + '}\$')  # 初始化正则匹配
-                try:
-                    if isinstance(relevance[n], list):  # 判断是关联key是否是个list
+                n_list = n.split(".")
+                n = n.lower()
+                if len(n_list) == 1:
+                    param = re.sub(pattern, str(relevance[n]), param)
+                elif len(n_list) == 2:
+                    if isinstance(n_list[1], int):
                         try:
-                            # 替换第一个匹配到的关联
-                            param = re.sub(pattern, relevance[n][relevance_index], param, count=1)
-                            relevance_index += 1
+                            param = re.sub(pattern, str(relevance[n_list[0]][int(n_list[1])]), param)
                         except IndexError:
-                            # 关联值使用完后，初始化索引为0，重新匹配
-                            relevance_index = 0
-                            param = re.sub(pattern, relevance[n][relevance_index], param, count=1)
-                            relevance_index += 1
+                            raise RelevanceIndexError(relevance[n], n)
                     else:
-                        # 关联key是字符串，直接替换
-                        param = re.sub(pattern, relevance[n], param)
-                except KeyError:
-                    pass
+                        raise RelevanceIndexNotInt(n)
+                else:
+                    raise RelevanceValueError(n)
         except TypeError:
             pass
-        # try:
-        #     param = function_replace(param)
-        # except TypeError:
-        #     pass
+        try:
+            param = function_replace(param)
+        except TypeError:
+            pass
     return param
 
 
-_relevance = ""
-
-
-def get_value(data, value):
-    """
-    author 李涛
-    获取json中的值
-    :param data: json数据
-    :param value: 值
-    :return:
-    """
-    global _relevance
-    if isinstance(data, dict):
-        if value in data:
-            _relevance = data[value]
-        else:
-            for key in data:
-                _relevance = get_value(data[key], value)
-    elif isinstance(data, list):
-        for key in data:
-            if isinstance(key, dict):
-                _relevance = get_value(key, value)
-                break
-    return _relevance
-
-
 if __name__ == "__main__":
+    pass
     # a = {"token": "test", "a": {"b": "Token $key$ $key$ $key$ $token$"}, "c": "$word$"}
     # b = {"key": ["123", "321"], "token": "test"}
     # print(manage(a, b))
-    c = {"code": 0, "codeMessage": "success", "data": {"phone": "17150194892"}, "ts": 1531460245367}
-    print(get_value(c, "phone"))
+    # c = {'name': '10', 'type': 'Web', 'version': 'KHQdpM8gAL', 'description': 'avp7tZOyiY', 'key': ['e1dfbfd759ad46bcdc44df989ade3f1c190cc936', '313vda']}
+    # # b = get_value(c, "$.key[1]")
+    # if b:
+    #     print(type(b))
+    #     print(b)
